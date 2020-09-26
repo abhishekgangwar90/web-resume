@@ -33,6 +33,7 @@ module.exports = {
     '@typescript-eslint/camelcase': ['warn'],
     '@typescript-eslint/camelcase': 'off',
     'no-use-before-define': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'prettier/prettier': [
       'error',
       {
