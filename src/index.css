@@ -18,7 +18,7 @@ code {
 }
 
 @font-face {
-  font-family: 'Merriweather-Bold';
+  font-family: 'Merriweather-Medium';
   src: url('./assets/fonts/Merriweather-Bold.ttf') format('OpenType');
 }
 
@@ -28,6 +28,6 @@ code {
 }
 
 @font-face {
-  font-family: 'Merriweather-Black';
+  font-family: 'Merriweather-Bold';
   src: url('./assets/fonts/Merriweather-Black.ttf') format('OpenType');
 }
