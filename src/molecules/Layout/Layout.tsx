@@ -1,35 +1,40 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PageNotFound from '../../pages/PageNotFound';
+import { useStyles } from './layout-styles';
 
-interface RouteObj {
+type RouteObj = {
   id: number;
   link: string;
   title: string;
   component: any;
-}
+};
 
-interface Props {
+type Props = {
   appRoutes: Array<RouteObj>;
-}
+};
 
 const Layout: React.FunctionComponent<Props> = ({ appRoutes = [] }: Props) => {
+  const classes = useStyles();
   return (
-    <Router basename="">
-      <Switch>
-        {appRoutes.map((route) => {
-          return (
-            <Route
-              exact
-              key={route.id}
-              path={route.link}
-              render={(routeProps) => <route.component {...routeProps} />}
-            />
-          );
-        })}
-        <Route path="*" component={PageNotFound} />
-      </Switch>
-    </Router>
+    <div className={classes.layout}>
+      <Router basename="">
+        <Switch>
+          {appRoutes.map((route) => {
+            return (
+              <Route
+                exact
+                key={route.id}
+                path={route.link}
+                render={(routeProps) => <route.component {...routeProps} />}
+              />
+            );
+          })}
+          <Route path="*" component={PageNotFound} />
+        </Switch>
+      </Router>
+    </div>
   );
 };
 

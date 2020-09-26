@@ -17,6 +17,7 @@ const materialTheme = createMuiTheme({
       light: 'rgb(37,36,34,0.8)',
       main: 'rgb(37, 36, 34,1)',
       dark: '#000',
+      contrastText: '#fff',
     },
     text: {
       primary: 'rgba(0, 0, 0, 0.87)',

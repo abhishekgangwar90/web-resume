@@ -1,5 +1,5 @@
 import React from 'react';
 
-function Footer(): JSX.Element {
+const Footer: React.FunctionComponent<any> = () => {
   return <>Footer</>;
-}
+};

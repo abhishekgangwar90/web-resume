@@ -5,13 +5,15 @@ import './App.css';
 import Layout from './molecules/Layout';
 import appRoutes from './config/RouteConfig';
 
-function App(): JSX.Element {
+const App: React.FunctionComponent<any> = () => {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <CssBaseline />
-      <Layout appRoutes={appRoutes} />
-    </ThemeProvider>
+    <div className="App">
+      <ThemeProvider theme={defaultTheme}>
+        <CssBaseline />
+        <Layout appRoutes={appRoutes} />
+      </ThemeProvider>
+    </div>
   );
-}
+};
 
 export default App;
