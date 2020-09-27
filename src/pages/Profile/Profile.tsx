@@ -24,7 +24,31 @@ const Profile: React.FunctionComponent<Props> = ({
 
       <Container>
         <Box my={2}>
-          <Button variant="text" color="primary">
+          <Button variant="contained" color="primary">
+            Home
+          </Button>
+          <Button
+            style={{
+              backgroundColor: '#0073b1',
+              color: '#fff',
+            }}
+          >
+            Home
+          </Button>
+          <Button
+            style={{
+              backgroundColor: '#0091ca',
+              color: '#fff',
+            }}
+          >
+            Home
+          </Button>
+          <Button
+            style={{
+              backgroundColor: 'rgb(37,36,34,1)',
+              color: '#fff',
+            }}
+          >
             Home
           </Button>
           {[...new Array(40)]

@@ -3,7 +3,7 @@
 import { createMuiTheme } from '@material-ui/core';
 import merriWeather from './defaultFont';
 
-const materialTheme = createMuiTheme({
+const materialDarkTheme = createMuiTheme({
   palette: {
     common: { black: '#000', white: '#fff' },
     background: { paper: '#fff', default: '#fff' },
@@ -14,14 +14,14 @@ const materialTheme = createMuiTheme({
       contrastText: '#fff',
     },
     secondary: {
-      light: '#fff',
-      main: '#fff',
-      dark: '#fff',
+      light: 'rgb(37,36,34,0.8)',
+      main: 'rgb(37, 36, 34,1)',
+      dark: '#000',
       contrastText: '#fff',
     },
     text: {
       primary: 'rgba(0, 0, 0, 0.87)',
-      secondary: '#fff',
+      secondary: 'rgba(0, 0, 0, 0.54)',
       disabled: 'rgba(0, 0, 0, 0.38)',
       hint: 'rgba(0, 0, 0, 0.38)',
     },
@@ -65,7 +65,6 @@ const materialTheme = createMuiTheme({
       leavingScreen: 195,
     },
   },
-
   zIndex: {
     mobileStepper: 1000,
     speedDial: 1050,
@@ -117,10 +116,6 @@ const materialTheme = createMuiTheme({
         fontFamily: 'Merriweather-Regular',
         fontSize: '18px',
       },
-      button: {
-        fontFamily: 'Merriweather-Medium',
-        fontSize: '18px',
-      },
     },
     MuiCssBaseline: {
       '@global': {
@@ -130,4 +125,4 @@ const materialTheme = createMuiTheme({
   },
 });
 
-export default materialTheme;
+export default materialDarkTheme;

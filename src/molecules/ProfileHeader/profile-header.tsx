@@ -35,20 +35,31 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
   headerConfig = defaultProps.headerConfig,
 }: Props) => {
   const classes = useStyles();
+
+  const renderToolBarButtons = () => {
+    return headerConfig.navOptions.map((elm) => {
+      return (
+        <Button variant="text" className={classes.button} key={elm.id}>
+          {elm.title}
+        </Button>
+      );
+    });
+  };
+
   return (
     <>
       <CssBaseline />
       <ElevationScroll>
         <AppBar className={classes.appBar}>
           <Container>
-            <Toolbar>
-              <Typography variant="h5">{headerConfig.title}</Typography>
-              <Button variant="text" color="secondary">
-                Home
-              </Button>
-              <Button variant="text" color="secondary">
-                Home
-              </Button>
+            <Toolbar className={classes.noPadding}>
+              <div className={classes.toolbarTitle}>
+                <div className={classes.iconButton}>AG</div>
+                <Typography variant="h5">{headerConfig.title}</Typography>
+              </div>
+              <div className={classes.toolbarActions}>
+                {renderToolBarButtons()}
+              </div>
             </Toolbar>
           </Container>
         </AppBar>
