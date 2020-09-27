@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
 
     [theme.breakpoints.between('sm', 'md')]: {
-      height: 'calc(18rem + 10vmin)',
+      height: 'calc(25rem + 10vmin)',
+      padding: '5px',
     },
 
     [theme.breakpoints.up('md')]: {
@@ -24,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
 
     '& img': {
       borderRadius: '50%',
-      height: 'calc(15rem + 5vmin)',
-      width: 'calc(15rem + 5vmin)',
+      height: 'calc(16rem + 5vmin)',
+      width: 'calc(16rem + 5vmin)',
 
       [theme.breakpoints.up('sm')]: {
-        height: 'calc(15rem + 10vmin)',
-        width: 'calc(15rem + 10vmin)',
+        height: 'calc(14rem + 10vmin)',
+        width: 'calc(14rem + 10vmin)',
       },
 
       [theme.breakpoints.up('md')]: {

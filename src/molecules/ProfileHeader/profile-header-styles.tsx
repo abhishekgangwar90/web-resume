@@ -4,36 +4,50 @@ import { makeStyles } from '@material-ui/core';
 export const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: theme.palette.secondary.main,
-    padding: 'calc(5px + 2vmin)',
+    padding: 'calc(12px + 2vmin)',
     color: theme.palette.text.primary,
   },
   noPadding: {
     padding: '0 !important',
   },
   toolbar: {
-    marginTop: 'calc(22px + 2vmin)',
+    marginTop: 'calc(32px + 2vmin)',
   },
   toolbarTitle: {
     display: 'flex',
     alignItems: 'center',
     flex: '1',
   },
-  iconButton: {
+  customIconButton: {
     height: '45px',
     width: '45px',
     borderRadius: '50%',
     fontSize: 'calc(4px + 2vmin)',
     backgroundColor: theme.palette.primary.main,
     marginRight: '1rem',
-    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     color: theme.palette.text.secondary,
+    display: 'none',
+
+    [theme.breakpoints.up('md')]: {
+      display: 'flex',
+    },
+  },
+  iconButton: {
+    display: 'none',
+    [theme.breakpoints.down('sm')]: {
+      display: 'inline-flex',
+    },
   },
   toolbarActions: {
-    display: 'flex',
+    display: 'none',
     flex: '1',
     justifyContent: 'space-around',
+
+    [theme.breakpoints.up('md')]: {
+      display: 'flex',
+    },
   },
   button: {
     fontFamily: 'Merriweather-Medium',

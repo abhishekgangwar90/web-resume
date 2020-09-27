@@ -4,9 +4,13 @@ import { makeStyles } from '@material-ui/core';
 
 export const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: 'calc(22px + 2vmin)',
+    marginTop: 'calc(32px + 2vmin)',
     alignItems: 'center',
     display: 'flex',
+
+    [theme.breakpoints.down('md')]: {
+      padding: '0 45px',
+    },
   },
   aboutContainer: {
     height: '100%',
@@ -16,6 +20,11 @@ export const useStyles = makeStyles((theme) => ({
   },
   aboutActions: {
     paddingTop: 'calc(2rem + 2vmin)',
+
+    [theme.breakpoints.down('xs')]: {
+      display: 'flex',
+      justifyContent: 'space-around',
+    },
   },
   aboutText: {
     paddingTop: 'calc(10px + 2vmin)',
