@@ -12,6 +12,11 @@ export const useStyles = makeStyles((theme) => ({
       padding: '0 45px',
     },
   },
+  grid: {
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column-reverse',
+    },
+  },
   aboutContainer: {
     height: '100%',
     display: 'flex',
