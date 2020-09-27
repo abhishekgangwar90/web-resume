@@ -75,48 +75,48 @@ const materialDarkTheme = createMuiTheme({
     tooltip: 1500,
   },
   overrides: {
-    MuiTypography: {
-      h1: {
-        fontFamily: 'Merriweather-Bold',
-        fontSize: '48px',
-      },
-      h2: {
-        fontFamily: 'Merriweather-Bold',
-        fontSize: '36px',
-      },
-      h3: {
-        fontFamily: 'Merriweather-Bold',
-        fontSize: '28px',
-      },
-      h4: {
-        fontFamily: 'Merriweather-Bold',
-        fontSize: '24px',
-      },
-      h5: {
-        fontFamily: 'Merriweather-Bold',
-        fontSize: '22px',
-      },
-      h6: {
-        fontFamily: 'Merriweather-Medium',
-        fontSize: '18px',
-      },
-      subtitle1: {
-        fontFamily: 'Merriweather-Medium',
-        fontSize: '24px',
-      },
-      subtitle2: {
-        fontFamily: 'Merriweather-Medium',
-        fontSize: '20px',
-      },
-      body1: {
-        fontFamily: 'Merriweather-Regular',
-        fontSize: '18px',
-      },
-      body2: {
-        fontFamily: 'Merriweather-Regular',
-        fontSize: '18px',
-      },
-    },
+    // MuiTypography: {
+    //   h1: {
+    //     fontFamily: 'Merriweather-Bold',
+    //     // fontSize: '48px',
+    //   },
+    //   h2: {
+    //     fontFamily: 'Merriweather-Bold',
+    //     // fontSize: '36px',
+    //   },
+    //   h3: {
+    //     fontFamily: 'Merriweather-Bold',
+    //     // fontSize: '28px',
+    //   },
+    //   h4: {
+    //     fontFamily: 'Merriweather-Bold',
+    //     // fontSize: '24px',
+    //   },
+    //   h5: {
+    //     fontFamily: 'Merriweather-Bold',
+    //     // fontSize: '22px',
+    //   },
+    //   h6: {
+    //     fontFamily: 'Merriweather-Medium',
+    //     // fontSize: '18px',
+    //   },
+    //   subtitle1: {
+    //     fontFamily: 'Merriweather-Medium',
+    //     // fontSize: '24px',
+    //   },
+    //   subtitle2: {
+    //     fontFamily: 'Merriweather-Medium',
+    //     // fontSize: '20px',
+    //   },
+    //   body1: {
+    //     fontFamily: 'Merriweather-Regular',
+    //     fontSize: '18px',
+    //   },
+    //   body2: {
+    //     fontFamily: 'Merriweather-Regular',
+    //     fontSize: '18px',
+    //   },
+    // },
     MuiCssBaseline: {
       '@global': {
         '@font-face': [merriWeather],

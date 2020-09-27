@@ -1,6 +1,6 @@
 /* eslint-disable import/no-mutable-exports */
 /* eslint-disable import/prefer-default-export */
-import { createMuiTheme } from '@material-ui/core';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 import merriWeather from './defaultFont';
 
 const materialTheme = createMuiTheme({
@@ -8,9 +8,9 @@ const materialTheme = createMuiTheme({
     common: { black: '#000', white: '#fff' },
     background: { paper: '#fff', default: '#fff' },
     primary: {
-      main: 'rgba(0, 105, 143,0.9)',
-      light: 'rgba(0, 105, 143,0.8)',
-      dark: 'rgba(0, 105, 143,1.0)',
+      main: 'rgba(0, 115, 177,1.0)',
+      light: 'rgba(0, 128, 196,1.0)',
+      dark: 'rgba(0, 119, 190,1.0)',
       contrastText: '#fff',
     },
     secondary: {
@@ -65,7 +65,6 @@ const materialTheme = createMuiTheme({
       leavingScreen: 195,
     },
   },
-
   zIndex: {
     mobileStepper: 1000,
     speedDial: 1050,
@@ -83,19 +82,19 @@ const materialTheme = createMuiTheme({
       },
       h2: {
         fontFamily: 'Merriweather-Bold',
-        fontSize: '36px',
+        fontSize: '38px',
       },
       h3: {
         fontFamily: 'Merriweather-Bold',
-        fontSize: '28px',
+        fontSize: '30px',
       },
       h4: {
-        fontFamily: 'Merriweather-Bold',
+        fontFamily: 'Merriweather-Medium',
         fontSize: '24px',
       },
       h5: {
-        fontFamily: 'Merriweather-Bold',
-        fontSize: '22px',
+        fontFamily: 'Merriweather-Medium',
+        fontSize: '20px',
       },
       h6: {
         fontFamily: 'Merriweather-Medium',
@@ -103,11 +102,11 @@ const materialTheme = createMuiTheme({
       },
       subtitle1: {
         fontFamily: 'Merriweather-Medium',
-        fontSize: '24px',
+        fontSize: '20px',
       },
       subtitle2: {
         fontFamily: 'Merriweather-Medium',
-        fontSize: '20px',
+        fontSize: '18px',
       },
       body1: {
         fontFamily: 'Merriweather-Regular',
@@ -115,11 +114,7 @@ const materialTheme = createMuiTheme({
       },
       body2: {
         fontFamily: 'Merriweather-Regular',
-        fontSize: '18px',
-      },
-      button: {
-        fontFamily: 'Merriweather-Medium',
-        fontSize: '18px',
+        fontSize: '16px',
       },
     },
     MuiCssBaseline: {
@@ -130,4 +125,6 @@ const materialTheme = createMuiTheme({
   },
 });
 
-export default materialTheme;
+const modifiedTheme = responsiveFontSizes(materialTheme);
+
+export default modifiedTheme;

@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: '0 !important',
   },
   toolbar: {
-    marginTop: 'calc(10px + 2vmin)',
+    marginTop: 'calc(22px + 2vmin)',
   },
   toolbarTitle: {
     display: 'flex',
@@ -22,6 +22,7 @@ export const useStyles = makeStyles((theme) => ({
     height: '45px',
     width: '45px',
     borderRadius: '50%',
+    fontSize: 'calc(4px + 2vmin)',
     backgroundColor: theme.palette.primary.main,
     marginRight: '1rem',
     display: 'flex',
