@@ -27,8 +27,6 @@ const Profile: React.FunctionComponent<Props> = ({
       <Suspense fallback="">
         <ProfileAbout aboutConfig={config.about} />
       </Suspense>
-
-      <Container>Hola</Container>
     </div>
   );
 };
