@@ -15,19 +15,23 @@ code {
 @font-face {
   font-family: 'Merriweather-Regular';
   src: url('./assets/fonts/Merriweather-Regular.ttf') format('OpenType');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Merriweather-Medium';
   src: url('./assets/fonts/Merriweather-Bold.ttf') format('OpenType');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Merriweather-Light';
   src: url('./assets/fonts/Merriweather-Light.ttf') format('OpenType');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Merriweather-Bold';
   src: url('./assets/fonts/Merriweather-Black.ttf') format('OpenType');
+  font-display: swap;
 }

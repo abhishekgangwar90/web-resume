@@ -120,6 +120,7 @@ const materialTheme = createMuiTheme({
     MuiCssBaseline: {
       '@global': {
         '@font-face': [merriWeather],
+        fontDisplay: 'swap',
       },
     },
   },
