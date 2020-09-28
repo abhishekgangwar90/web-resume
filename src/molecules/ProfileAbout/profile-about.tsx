@@ -1,8 +1,7 @@
-import React from 'react';
-import { Button, Container, Grid, Typography } from '@material-ui/core';
+import React, { Suspense } from 'react';
+import { Container, Grid } from '@material-ui/core';
 import { useStyles } from './profile-about-styles';
 import ProfileAboutContent from './profile-about-content';
-import ProfileAboutAction from './profile-about-actions';
 
 const ProfilePic = React.lazy(() => import('../../atoms/ProfilePic'));
 
@@ -20,7 +19,11 @@ const ProfileAbout: React.FunctionComponent<Props> & {
 } = ({ aboutConfig }: Props) => {
   const classes = useStyles();
   const renderProfilePic = () => {
-    return <ProfilePic />;
+    return (
+      <Suspense fallback={<div />}>
+        <ProfilePic />
+      </Suspense>
+    );
   };
 
   return (
