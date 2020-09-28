@@ -21,10 +21,10 @@ const Profile: React.FunctionComponent<Props> = ({
   const config = ProfileConfig;
   return (
     <div className={classes.container}>
-      <Suspense fallback="">
+      <Suspense fallback={<div />}>
         <ProfileHeader headerConfig={config.header} />
       </Suspense>
-      <Suspense fallback="">
+      <Suspense fallback={<div />}>
         <ProfileAbout aboutConfig={config.about} />
       </Suspense>
     </div>

@@ -11,6 +11,11 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       padding: '0 45px',
     },
+
+    [theme.breakpoints.down('xs')]: {
+      padding: '0 25px',
+      marginTop: '0',
+    },
   },
   grid: {
     [theme.breakpoints.down('xs')]: {
@@ -22,6 +27,10 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+
+    [theme.breakpoints.down('xs')]: {
+      textAlign: 'center',
+    },
   },
   aboutActions: {
     paddingTop: 'calc(2rem + 2vmin)',
@@ -34,11 +43,15 @@ export const useStyles = makeStyles((theme) => ({
   aboutText: {
     paddingTop: 'calc(10px + 2vmin)',
     textAlign: 'justify',
+
+    [theme.breakpoints.down('xs')]: {
+      textAlign: 'inherit',
+    },
   },
   button: {
     textTransform: 'none',
     marginRight: '1rem',
-    fontSize: '14px',
+    fontSize: '16px',
     [theme.breakpoints.up('sm')]: {
       fontSize: '18px',
       marginRight: '2rem',
