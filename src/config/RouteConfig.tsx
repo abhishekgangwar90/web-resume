@@ -1,5 +1,7 @@
-import Login from '../pages/Login';
-import Profile from '../pages/Profile';
+import React from 'react';
+
+const Login = React.lazy(() => import('../pages/Login'));
+const Profile = React.lazy(() => import('../pages/Profile'));
 
 interface Route {
   id: number;
