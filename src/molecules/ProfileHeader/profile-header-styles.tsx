@@ -7,6 +7,11 @@ export const useStyles = makeStyles((theme) => ({
     padding: 'calc(12px + 2vmin)',
     color: theme.palette.text.primary,
   },
+  toolBarContainer: {
+    [theme.breakpoints.down('xs')]: {
+      padding: '0',
+    },
+  },
   noPadding: {
     padding: '0 !important',
   },
@@ -38,6 +43,7 @@ export const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.down('sm')]: {
       display: 'inline-flex',
+      paddingLeft: '0',
     },
   },
   toolbarActions: {

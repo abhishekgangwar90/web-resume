@@ -53,7 +53,7 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
       <CssBaseline />
       <ElevationScroll>
         <AppBar className={classes.appBar}>
-          <Container>
+          <Container className={classes.toolBarContainer}>
             <Toolbar className={classes.noPadding}>
               <ProfileHeaderTitle
                 title={headerConfig.title}
