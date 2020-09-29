@@ -1,10 +1,35 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
-import { styled } from '@material-ui/core';
+import { Container, Paper, styled, withStyles } from '@material-ui/core';
 
 export const ExperienceContainer = styled(({ children, ...other }) => (
   <div {...other}>{children}</div>
 ))({
   margin: '7% 0',
-  backgroundColor: '#e6e6e6',
+  padding: '8% 0',
+  backgroundColor: '#f4ece6',
 });
+
+export const ExperienceContent = withStyles(() => ({}))(Container);
+
+// export const ExperienceCardContainer = styled(({ children, ...other }) => (
+//   <div {...other}>{children}</div>
+// ))({
+//   padding: '6%',
+//   margin: '2%',
+//   backgroundColor: '#e6dace',
+// });
+
+/**
+ * #e6dace
+ * #E0D0C1
+ */
+
+export const ExperienceCardContainer = withStyles({
+  root: {
+    padding: '8% 6%',
+    margin: '2%',
+    backgroundColor: '#efeef1',
+    borderRadius: '14px',
+  },
+})((props) => <Paper elevation={4} {...props} />);

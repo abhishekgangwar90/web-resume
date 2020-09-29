@@ -30,7 +30,7 @@ const Profile: React.FunctionComponent<Props> = ({
         <ProfileAbout aboutConfig={config.about} />
       </Suspense>
       <Suspense fallback={<div />}>
-        <ProfileExperience />
+        <ProfileExperience experienceConfig={config.experience} />
       </Suspense>
     </div>
   );

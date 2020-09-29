@@ -67,8 +67,8 @@ export const ProfileConfig = {
       },
       {
         id: 2,
-        title: 'Software Engineer',
-        organization: 'Gartner Inc.',
+        title: 'Senior Soft. Engineer',
+        organization: 'GlobalLogic India',
         startDate: 'June, 2019',
         endDate: null,
         details:
@@ -77,7 +77,16 @@ export const ProfileConfig = {
       {
         id: 3,
         title: 'Software Engineer',
-        organization: 'Gartner Inc.',
+        organization: 'GlobalLogic India',
+        startDate: 'June, 2019',
+        endDate: null,
+        details:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+      },
+      {
+        id: 4,
+        title: 'Associate Soft. Engineer',
+        organization: 'GlobalLogic India',
         startDate: 'June, 2019',
         endDate: null,
         details:
