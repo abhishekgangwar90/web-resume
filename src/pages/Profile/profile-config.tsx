@@ -53,4 +53,36 @@ export const ProfileConfig = {
       },
     ],
   },
+  experience: {
+    title: 'Experience',
+    experienceDetails: [
+      {
+        id: 1,
+        title: 'Software Engineer',
+        organization: 'Gartner Inc.',
+        startDate: 'June, 2019',
+        endDate: null,
+        details:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+      },
+      {
+        id: 2,
+        title: 'Software Engineer',
+        organization: 'Gartner Inc.',
+        startDate: 'June, 2019',
+        endDate: null,
+        details:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+      },
+      {
+        id: 3,
+        title: 'Software Engineer',
+        organization: 'Gartner Inc.',
+        startDate: 'June, 2019',
+        endDate: null,
+        details:
+          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+      },
+    ],
+  },
 };

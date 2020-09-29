@@ -1,10 +1,12 @@
 import React, { Suspense } from 'react';
-import { Container } from '@material-ui/core';
 import { useStyles } from './profile-styles';
 import { ProfileConfig } from './profile-config';
 
 const ProfileHeader = React.lazy(() => import('../../molecules/ProfileHeader'));
 const ProfileAbout = React.lazy(() => import('../../molecules/ProfileAbout'));
+const ProfileExperience = React.lazy(
+  () => import('../../organisms/ProfileExperience')
+);
 
 interface Props {
   history: any;
@@ -26,6 +28,9 @@ const Profile: React.FunctionComponent<Props> = ({
       </Suspense>
       <Suspense fallback={<div />}>
         <ProfileAbout aboutConfig={config.about} />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <ProfileExperience />
       </Suspense>
     </div>
   );
