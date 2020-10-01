@@ -8,6 +8,11 @@ type Props = {
 
 const ProfileAboutAction: any = ({ actions = [] }: Props) => {
   const classes = useStyles();
+
+  const onButtonClick = (e: any, url: string) => {
+    window.open(url);
+  };
+
   return (
     <div className={classes.aboutActions}>
       {actions &&
@@ -20,6 +25,7 @@ const ProfileAboutAction: any = ({ actions = [] }: Props) => {
               startIcon={elm.icon}
               color={elm.color}
               variant={elm.variant}
+              onClick={(e: any) => onButtonClick(e, elm.url)}
             >
               {elm.name}
             </Button>

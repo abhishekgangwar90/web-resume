@@ -33,6 +33,7 @@ export const ProfileConfig = {
   about: {
     name: 'Abhishek Gangwar',
     title: 'Front-end Developer',
+    location: 'Gurugram, India',
     aboutMe: `Results-oriented software engineering professional with 4 years of expertise in building secure applications. An excellent collaborator with a cheerful outlook seeking a role in building Web and mobile applications for a well-established software company.`,
     actions: [
       {
@@ -41,7 +42,7 @@ export const ProfileConfig = {
         variant: 'outlined',
         color: 'primary',
         name: 'StackOverFlow',
-        url: '',
+        url: 'https://stackoverflow.com/users/9269538/abhishek-gangwar',
       },
       {
         id: 2,
@@ -49,7 +50,7 @@ export const ProfileConfig = {
         variant: 'contained',
         color: 'primary',
         name: 'LinkedIn',
-        url: '',
+        url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
       },
     ],
   },

@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 
-import { makeStyles } from '@material-ui/core';
+import React from 'react';
+import { makeStyles, Typography, withStyles } from '@material-ui/core';
 
 export const useStyles = makeStyles((theme) => ({
   container: {
@@ -71,3 +72,9 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+export const CenterAlignedTypography = withStyles((theme) => ({
+  root: {
+    display: 'flex',
+  },
+}))(({ children, ...rest }) => <Typography {...rest}>{children}</Typography>);

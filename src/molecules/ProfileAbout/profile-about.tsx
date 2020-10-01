@@ -10,6 +10,7 @@ type Props = {
     name: string;
     title: string;
     aboutMe: string;
+    location: string;
     actions: Array<any>;
   };
 };

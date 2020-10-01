@@ -20,16 +20,11 @@ export const ExperienceContent = withStyles(() => ({}))(Container);
 //   backgroundColor: '#e6dace',
 // });
 
-/**
- * #e6dace
- * #E0D0C1
- */
-
 export const ExperienceCardContainer = withStyles({
   root: {
     padding: '8% 6%',
     margin: '2%',
-    backgroundColor: '#efeef1',
+    backgroundColor: '#f8f8f8',
     borderRadius: '14px',
   },
 })((props) => <Paper elevation={4} {...props} />);
