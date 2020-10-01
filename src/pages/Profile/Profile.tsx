@@ -7,6 +7,7 @@ const ProfileAbout = React.lazy(() => import('../../molecules/ProfileAbout'));
 const ProfileExperience = React.lazy(
   () => import('../../organisms/ProfileExperience')
 );
+const Footer = React.lazy(() => import('../../atoms/Footer'));
 
 interface Props {
   history: any;
@@ -31,6 +32,9 @@ const Profile: React.FunctionComponent<Props> = ({
       </Suspense>
       <Suspense fallback={<div />}>
         <ProfileExperience experienceConfig={config.experience} />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <Footer />
       </Suspense>
     </div>
   );

@@ -23,6 +23,7 @@ type navigationOption = {
   id: number;
   name: string;
   title: string;
+  targetId: string;
   // link: string;
 };
 
@@ -38,10 +39,20 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
 }: Props) => {
   const classes = useStyles();
 
+  const handleNavClick = (targetId: string) => {
+    const element = document.getElementById(targetId);
+    return element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   const renderToolBarButtons = () => {
     return headerConfig.navOptions.map((elm) => {
       return (
-        <Button variant="text" className={classes.button} key={elm.id}>
+        <Button
+          variant="text"
+          className={classes.button}
+          key={elm.id}
+          onClick={() => handleNavClick(elm.targetId)}
+        >
           {elm.title}
         </Button>
       );

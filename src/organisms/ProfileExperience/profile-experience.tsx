@@ -1,11 +1,12 @@
-import { Container, Grid, Paper, Typography } from '@material-ui/core';
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import Carousel from '../../atoms/Carousel';
 import {
+  CarouselContainer,
   ExperienceContainer,
   ExperienceContent,
 } from './profile-experience-styles';
-import ExperienceCard from './profile-experince-card';
+import ExperienceCard from './profile-experience-card';
 
 type Props = {
   experienceConfig: config;
@@ -13,23 +14,23 @@ type Props = {
 
 type config = {
   title: string;
-  experienceDetails: Array<any>;
+  experienceData: Array<any>;
 };
 
 const ProfileExperience: React.FunctionComponent<Props> = ({
   experienceConfig,
 }: Props) => {
   return (
-    <ExperienceContainer>
+    <ExperienceContainer id="experience">
       <ExperienceContent>
         <Typography variant="h3">{experienceConfig.title}</Typography>
-        <div style={{ paddingTop: '4%' }}>
+        <CarouselContainer>
           <Carousel>
-            {experienceConfig.experienceDetails.map((elm) => {
+            {experienceConfig.experienceData.map((elm) => {
               return <ExperienceCard key={elm.id} {...elm} />;
             })}
           </Carousel>
-        </div>
+        </CarouselContainer>
       </ExperienceContent>
     </ExperienceContainer>
   );

@@ -1,30 +1,55 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
-import { Container, Paper, styled, withStyles } from '@material-ui/core';
+import { Card, Container, Paper, styled, withStyles } from '@material-ui/core';
 
 export const ExperienceContainer = styled(({ children, ...other }) => (
   <div {...other}>{children}</div>
 ))({
   margin: '7% 0',
-  padding: '8% 0',
+  padding: '8% 0 11% 0',
   backgroundColor: '#f4ece6',
 });
 
 export const ExperienceContent = withStyles(() => ({}))(Container);
 
-// export const ExperienceCardContainer = styled(({ children, ...other }) => (
-//   <div {...other}>{children}</div>
-// ))({
-//   padding: '6%',
-//   margin: '2%',
-//   backgroundColor: '#e6dace',
-// });
+export const CarouselContainer = styled(({ children, ...other }) => (
+  <div {...other}>{children}</div>
+))({
+  paddingTop: '4%',
+});
 
 export const ExperienceCardContainer = withStyles({
   root: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: 'calc(29rem + 5vmin)',
     padding: '8% 6%',
     margin: '2%',
     backgroundColor: '#f8f8f8',
     borderRadius: '14px',
   },
-})((props) => <Paper elevation={4} {...props} />);
+})((props) => <Card elevation={4} {...props} />);
+
+export const ExperienceCardHeader = styled(({ children, ...other }) => (
+  <div {...other}>{children}</div>
+))({
+  display: 'flex',
+  flexDirection: 'column',
+  height: '25%',
+});
+
+export const ExperienceCardDetails = styled(({ children, ...other }) => (
+  <div {...other}>{children}</div>
+))({
+  display: 'flex',
+  height: '60%',
+});
+
+export const ExperienceCardActions = styled(({ children, ...other }) => (
+  <div {...other}>{children}</div>
+))({
+  display: 'flex',
+  justifyContent: 'flex-end',
+  alignItems: 'center',
+  height: '15%',
+});

@@ -28,7 +28,7 @@ const ProfileAbout: React.FunctionComponent<Props> & {
   };
 
   return (
-    <Container className={classes.container}>
+    <Container id="about" className={classes.container}>
       <Grid container className={classes.grid}>
         <Grid md={7} sm={7} xs={12} item>
           <ProfileAboutContent {...aboutConfig} />
