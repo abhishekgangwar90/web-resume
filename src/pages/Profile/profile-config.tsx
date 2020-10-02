@@ -1,6 +1,9 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 export const ProfileConfig = {
   id: 'profile',
@@ -158,6 +161,34 @@ export const ProfileConfig = {
               'Improved scalability and performance of associate checkout application which was deployed into 750 stores after a successful pilot launch.',
           },
         ],
+      },
+    ],
+  },
+  footer: {
+    socialProfiles: [
+      {
+        id: 1,
+        name: 'linkedIn',
+        icon: <LinkedInIcon />,
+        url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
+      },
+      {
+        id: 2,
+        name: 'github',
+        icon: <GitHubIcon />,
+        url: 'https://github.com/abhishekgangwar90',
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        icon: <InstagramIcon />,
+        url: 'https://www.instagram.com/iam_abhishek25/',
+      },
+      {
+        id: 4,
+        name: 'facebook',
+        icon: <FacebookIcon />,
+        url: 'https://www.facebook.com/AbhishekGangwar2558',
       },
     ],
   },

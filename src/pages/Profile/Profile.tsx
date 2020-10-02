@@ -34,7 +34,7 @@ const Profile: React.FunctionComponent<Props> = ({
         <ProfileExperience experienceConfig={config.experience} />
       </Suspense>
       <Suspense fallback={<div />}>
-        <Footer />
+        <Footer footerConfig={config.footer} />
       </Suspense>
     </div>
   );
