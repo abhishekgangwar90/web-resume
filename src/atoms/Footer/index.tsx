@@ -31,6 +31,7 @@ const Footer: React.FunctionComponent<Props> = ({ footerConfig }: Props) => {
         {socialProfiles.map((elm) => {
           return (
             <IconButton
+              name={elm.name}
               color="secondary"
               key={elm.id}
               onClick={() => handleSocialLinkClick(elm.url)}

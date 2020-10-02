@@ -30,7 +30,6 @@ export const useStyles = makeStyles((theme) => ({
 export const FooterContainer = styled(({ children, ...other }) => (
   <div {...other}>{children}</div>
 ))({
-  padding: '2% 0',
   color: '#fff',
   // backgroundColor: 'rgb(37,36,34,0.8)',
   backgroundColor: '#005276',
