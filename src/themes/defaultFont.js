@@ -1,4 +1,4 @@
-import MerriweatherRegular from '../assets/fonts/Merriweather-Regular.ttf';
+const MerriweatherRegular = import('../assets/fonts/Merriweather-Regular.ttf');
 
 const merriWeather = {
   fontFamily: 'MerriWeather-Regular',
