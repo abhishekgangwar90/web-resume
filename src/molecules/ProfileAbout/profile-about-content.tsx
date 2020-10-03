@@ -1,9 +1,12 @@
-import React from 'react';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import React, { Suspense } from 'react';
 import { Typography } from '@material-ui/core';
 
-import ProfileAboutAction from './profile-about-actions';
 import { CenterAlignedTypography, useStyles } from './profile-about-styles';
+
+const ProfileAboutAction = React.lazy(() => import('./profile-about-actions'));
+const LocationOnIcon = React.lazy(
+  () => import('@material-ui/icons/LocationOn')
+);
 
 type Props = {
   name: string;
@@ -26,13 +29,17 @@ const ProfileAboutContent: React.FunctionComponent<Props> = ({
       <Typography variant="h3">{name}</Typography>
       <Typography variant="h6">{title}</Typography>
       <CenterAlignedTypography>
-        <LocationOnIcon color="primary" />
+        <Suspense fallback="">
+          <LocationOnIcon color="primary" />
+        </Suspense>
         {location}
       </CenterAlignedTypography>
       <Typography variant="body1" className={classes.aboutText}>
         {aboutMe}
       </Typography>
-      <ProfileAboutAction actions={actions} />
+      <Suspense fallback={<div />}>
+        <ProfileAboutAction actions={actions} />
+      </Suspense>
     </div>
   );
 };

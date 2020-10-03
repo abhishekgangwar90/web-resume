@@ -1,8 +1,9 @@
-import { Container, Typography } from '@material-ui/core';
 import React from 'react';
-import ProfileSkillsList from './profile-skills-list';
+import { Container, Typography } from '@material-ui/core';
 import { SkillsContainer } from './profile-skills-styles';
 import { subSkillType } from './profile-skills-types';
+
+const ProfileSkillsList = React.lazy(() => import('./profile-skills-list'));
 
 type Props = {
   skillsConfig: {

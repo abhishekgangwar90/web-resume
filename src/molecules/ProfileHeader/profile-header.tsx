@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {
   AppBar,
   Button,
   Container,
   CssBaseline,
-  IconButton,
   Toolbar,
-  Typography,
 } from '@material-ui/core';
 import ElevationScroll from './profile-elevation-scroll';
 import { useStyles } from './profile-header-styles';
-import ProfileHeaderTitle from './profile-header-title';
+
+const ProfileHeaderTitle = React.lazy(() => import('./profile-header-title'));
 
 type Props = {
   headerConfig: {
@@ -66,10 +65,12 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
         <AppBar className={classes.appBar}>
           <Container className={classes.toolBarContainer}>
             <Toolbar className={classes.noPadding}>
-              <ProfileHeaderTitle
-                title={headerConfig.title}
-                navOptions={headerConfig.navOptions}
-              />
+              <Suspense fallback={<div />}>
+                <ProfileHeaderTitle
+                  title={headerConfig.title}
+                  navOptions={headerConfig.navOptions}
+                />
+              </Suspense>
               <div className={classes.toolbarActions}>
                 {renderToolBarButtons()}
               </div>

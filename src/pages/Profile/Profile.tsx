@@ -1,12 +1,14 @@
 import React, { Suspense } from 'react';
 import { useStyles } from './profile-styles';
 import { ProfileConfig } from './config/profile-config';
-import ProfileSkills from '../../organisms/Skills/profile-skills';
 
 const ProfileHeader = React.lazy(() => import('../../molecules/ProfileHeader'));
 const ProfileAbout = React.lazy(() => import('../../molecules/ProfileAbout'));
 const ProfileExperience = React.lazy(
   () => import('../../organisms/ProfileExperience')
+);
+const ProfileSkills = React.lazy(
+  () => import('../../organisms/Skills/profile-skills')
 );
 const Footer = React.lazy(() => import('../../atoms/Footer'));
 
