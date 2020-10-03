@@ -32,6 +32,7 @@ const Footer: React.FunctionComponent<Props> = ({ footerConfig }: Props) => {
           return (
             <IconButton
               name={elm.name}
+              aria-label={elm.name}
               color="secondary"
               key={elm.id}
               onClick={() => handleSocialLinkClick(elm.url)}
@@ -54,7 +55,9 @@ const Footer: React.FunctionComponent<Props> = ({ footerConfig }: Props) => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="body2">Follow me on</Typography>
+            <Typography variant="body2">
+              Connect with me on Social Media
+            </Typography>
             {renderSocialProfileIcons()}
           </Grid>
         </Grid>

@@ -20,13 +20,13 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
       },
 
-      [theme.breakpoints.down('xs')]: {
+      [theme.breakpoints.down('md')]: {
         justifyContent: 'flex-start',
       },
     },
   },
   footerText: {
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('md')]: {
       paddingTop: '4%',
     },
   },
