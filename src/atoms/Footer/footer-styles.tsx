@@ -25,6 +25,11 @@ export const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  footerText: {
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: '4%',
+    },
+  },
 }));
 
 export const FooterContainer = styled(({ children, ...other }) => (

@@ -49,7 +49,7 @@ const Footer: React.FunctionComponent<Props> = ({ footerConfig }: Props) => {
       <Container>
         <Grid container className={classes.gridContainer}>
           <Grid item xs={12} md={6}>
-            <Typography variant="body2">
+            <Typography variant="body2" className={classes.footerText}>
               @{d.getUTCFullYear()} Abhishek Gangwar
             </Typography>
           </Grid>

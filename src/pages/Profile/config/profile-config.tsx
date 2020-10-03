@@ -4,6 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import { skillsConfig } from './skills-config';
 
 export const ProfileConfig = {
   id: 'profile',
@@ -62,7 +63,7 @@ export const ProfileConfig = {
     ],
   },
   experience: {
-    title: 'Experience',
+    title: 'Work Experience',
     experienceData: [
       {
         id: 1,
@@ -164,6 +165,7 @@ export const ProfileConfig = {
       },
     ],
   },
+  skills: skillsConfig,
   footer: {
     socialProfiles: [
       {

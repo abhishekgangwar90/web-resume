@@ -76,5 +76,11 @@ export const useStyles = makeStyles((theme) => ({
 export const CenterAlignedTypography = withStyles((theme) => ({
   root: {
     display: 'flex',
+
+    [theme.breakpoints.down('xs')]: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
   },
 }))(({ children, ...rest }) => <Typography {...rest}>{children}</Typography>);

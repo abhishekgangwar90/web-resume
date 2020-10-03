@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { useStyles } from './profile-styles';
-import { ProfileConfig } from './profile-config';
+import { ProfileConfig } from './config/profile-config';
+import ProfileSkills from '../../organisms/Skills/profile-skills';
 
 const ProfileHeader = React.lazy(() => import('../../molecules/ProfileHeader'));
 const ProfileAbout = React.lazy(() => import('../../molecules/ProfileAbout'));
@@ -32,6 +33,9 @@ const Profile: React.FunctionComponent<Props> = ({
       </Suspense>
       <Suspense fallback={<div />}>
         <ProfileExperience experienceConfig={config.experience} />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <ProfileSkills skillsConfig={config.skills} />
       </Suspense>
       <Suspense fallback={<div />}>
         <Footer footerConfig={config.footer} />
