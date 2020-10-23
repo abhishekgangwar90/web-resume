@@ -35,7 +35,7 @@ const ProfileSkillsList: React.FunctionComponent<Props> = ({
     <SkillListContainer>
       {skillsData.map((elm) => {
         return (
-          <SkillList>
+          <SkillList key={elm.id}>
             <Typography variant="h5">{elm.skillHeader}</Typography>
             {renderSubSkills(elm.subSkillsData)}
           </SkillList>

@@ -8,9 +8,7 @@ export const SkillsContainer = styled(({ children, ...rest }) => {
       {children}
     </div>
   );
-})({
-  padding: '7% 0',
-});
+})({});
 
 export const SkillListContainer = withStyles(() => ({}))(Container);
 

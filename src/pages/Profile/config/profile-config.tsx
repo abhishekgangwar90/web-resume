@@ -134,7 +134,7 @@ export const ProfileConfig = {
           {
             id: 2,
             description:
-              'Worked on modularizing self checkout application to improve performance and scalability',
+              'Worked on modularizing self checkout application to improve performance and scalability.',
           },
         ],
       },
@@ -148,7 +148,7 @@ export const ProfileConfig = {
           {
             id: 1,
             description:
-              'Developed self-checkout application for Kohls which was launched into 150 kohls stores across the United States .',
+              'Developed self-checkout application for Kohls which was launched into 150 kohls stores across the United States.',
           },
           {
             id: 2,
