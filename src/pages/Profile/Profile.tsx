@@ -34,11 +34,11 @@ const Profile: React.FunctionComponent<Props> = (props: Props) => {
           <ProfileExperience experienceConfig={config.experience} />
         </Suspense>
       </section>
-      {/* <section id="skills">
+      <section className={classes.section} id="skills">
         <Suspense fallback={<div />}>
           <ProfileSkills skillsConfig={config.skills} />
         </Suspense>
-      </section> */}
+      </section>
       <Footer footerConfig={config.footer} />
     </div>
   );

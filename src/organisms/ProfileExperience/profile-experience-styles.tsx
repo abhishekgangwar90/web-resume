@@ -24,7 +24,7 @@ export const ExperienceCardContainer = withStyles({
     height: 'calc(29rem + 5vmin)',
     padding: '8% 6%',
     margin: '2%',
-    backgroundColor: '#f8f8f8',
+    backgroundColor: '#fff',
     borderRadius: '14px',
     // backgroundImage:
     //   'linear-gradient(to bottom, rgba(0, 82, 118,0.8) 0%,#fff 30%)',

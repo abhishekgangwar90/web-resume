@@ -50,7 +50,7 @@ const ProfilePic: React.FunctionComponent<any> = () => {
   const classes = useStyles();
   return (
     <div className={classes.imageContainer}>
-      <img src={Profile} alt="profile" />
+      <img src={Profile} width="100%" height="100%" alt="profile" />
     </div>
   );
 };

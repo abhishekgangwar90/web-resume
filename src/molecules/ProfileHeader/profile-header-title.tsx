@@ -59,7 +59,7 @@ const ProfileHeaderTitle: React.FunctionComponent<Props> = ({
   return (
     <div className={classes.toolbarTitle}>
       <div className={classes.customIconButton}>AG</div>
-      <IconButton
+      {/* <IconButton
         color="primary"
         className={classes.iconButton}
         onClick={() => setOpen(true)}
@@ -75,7 +75,7 @@ const ProfileHeaderTitle: React.FunctionComponent<Props> = ({
         >
           {renderDrawerMenuOptions()}
         </SwipeableDrawer>
-      </>
+      </> */}
       <Typography variant="h5">{title}</Typography>
     </div>
   );

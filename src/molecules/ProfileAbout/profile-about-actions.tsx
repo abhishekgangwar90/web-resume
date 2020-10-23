@@ -23,6 +23,7 @@ const ProfileAboutAction: any = ({ actions = [] }: Props) => {
               key={elm.id}
               className={classes.button}
               color={elm.color}
+              name={elm.name}
               onClick={(e: any) => onButtonClick(e, elm.url)}
             >
               {elm.icon}

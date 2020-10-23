@@ -33,10 +33,10 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     color: theme.palette.text.secondary,
-    display: 'none',
+    display: 'flex',
 
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
     },
   },
   iconButton: {

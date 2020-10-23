@@ -27,7 +27,7 @@ const ProfileAboutContent: React.FunctionComponent<Props> = ({
   return (
     <div className={classes.aboutContainer}>
       <Typography variant="h3">{name}</Typography>
-      <Typography variant="h6">{title}</Typography>
+      <Typography variant="h5">{title}</Typography>
       <CenterAlignedTypography>
         <Suspense fallback="">
           <LocationOnIcon color="primary" />

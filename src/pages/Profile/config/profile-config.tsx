@@ -58,24 +58,28 @@ export const ProfileConfig = {
     actions: [
       {
         id: 1,
+        name: 'stackOverFlow',
         icon: <IconStackOverFlow />,
         color: 'primary',
         url: 'https://stackoverflow.com/users/9269538/abhishek-gangwar',
       },
       {
         id: 2,
+        name: 'linkedIn',
         icon: <LinkedInIcon style={{ fontSize: '3.5rem' }} />,
         color: 'primary',
         url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
       },
       {
         id: 3,
+        name: 'github',
         icon: <GitHubIcon style={{ fontSize: '3rem' }} />,
         color: 'primary',
         url: 'https://github.com/abhishekgangwar60',
       },
       {
         id: 4,
+        name: 'mail',
         icon: <MailOutlineIcon style={{ fontSize: '3.5rem' }} />,
         color: 'primary',
         variant: 'contained',
