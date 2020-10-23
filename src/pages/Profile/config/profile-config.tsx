@@ -4,7 +4,15 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+
+import IconStackOverFlow from '../../../atoms/IconStackoverflow';
 import { skillsConfig } from './skills-config';
+
+const careerStartDate = new Date('10/03/2016');
+const currentDate = new Date();
+const experience =
+  currentDate.getUTCFullYear() - careerStartDate.getUTCFullYear();
 
 export const ProfileConfig = {
   id: 'profile',
@@ -42,23 +50,32 @@ export const ProfileConfig = {
     name: 'Abhishek Gangwar',
     title: 'Front-end Developer',
     location: 'Gurugram, India',
-    aboutMe: `Results-oriented software engineering professional with 4 years of expertise in building secure applications. An excellent collaborator with a cheerful outlook seeking a role in building Web and mobile applications for a well-established software company.`,
+    aboutMe: `Results-oriented software engineering professional with ${experience} years of expertise in building secure applications. An excellent collaborator with a cheerful outlook who is always willing to learn new things and take on new challenges.`,
     actions: [
       {
         id: 1,
-        icon: '',
-        variant: 'outlined',
+        icon: <IconStackOverFlow />,
         color: 'primary',
-        name: 'StackOverFlow',
         url: 'https://stackoverflow.com/users/9269538/abhishek-gangwar',
       },
       {
         id: 2,
-        icon: <LinkedInIcon fontSize="large" />,
-        variant: 'contained',
+        icon: <LinkedInIcon style={{ fontSize: '3.5rem' }} />,
         color: 'primary',
-        name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
+      },
+      {
+        id: 3,
+        icon: <GitHubIcon style={{ fontSize: '3rem' }} />,
+        color: 'primary',
+        url: 'https://github.com/abhishekgangwar60',
+      },
+      {
+        id: 4,
+        icon: <MailOutlineIcon style={{ fontSize: '3.5rem' }} />,
+        color: 'primary',
+        variant: 'contained',
+        url: 'mailto:me.abhishekgangwar@gmail.com',
       },
     ],
   },

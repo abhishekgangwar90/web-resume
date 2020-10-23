@@ -55,11 +55,16 @@ export const useStyles = makeStyles((theme) => ({
       display: 'flex',
     },
   },
-  button: {
+  link: {
     fontFamily: 'Merriweather-Medium',
+    cursor: 'pointer',
     '&:hover': {
       color: theme.palette.primary.main,
       backgroundColor: '#fff !important',
     },
+  },
+  subHeader: {
+    color: theme.palette.primary.main,
+    fontFamily: 'Merriweather-Medium',
   },
 }));

@@ -6,4 +6,7 @@ export const useStyles = makeStyles({
     width: '100%',
     minHeight: 'inherit',
   },
+  section: {
+    padding: '6% 0'
+  }
 });

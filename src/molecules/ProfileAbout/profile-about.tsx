@@ -28,12 +28,10 @@ const ProfileAbout: React.FunctionComponent<Props> & {
   };
 
   return (
-    <Container id="about" className={classes.container}>
+    <Container className={classes.container}>
       <Grid container className={classes.grid}>
         <Grid md={7} sm={7} xs={12} item>
-          <Suspense fallback={<div />}>
-            <ProfileAboutContent {...aboutConfig} />
-          </Suspense>
+          <ProfileAboutContent {...aboutConfig} />
         </Grid>
         <Grid md={5} sm={5} xs={12} item>
           {renderProfilePic()}

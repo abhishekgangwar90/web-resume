@@ -5,7 +5,6 @@ import { makeStyles, Typography, withStyles } from '@material-ui/core';
 
 export const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: 'calc(32px + 2vmin)',
     alignItems: 'center',
     display: 'flex',
 
@@ -15,7 +14,6 @@ export const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('xs')]: {
       padding: '0 25px',
-      marginTop: '0',
     },
   },
   grid: {
@@ -34,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   aboutActions: {
-    paddingTop: 'calc(2rem + 2vmin)',
+    paddingTop: 'calc(1rem + 2vmin)',
 
     [theme.breakpoints.down('xs')]: {
       display: 'flex',

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import Carousel from '../../atoms/Carousel';
 import {
   CarouselContainer,

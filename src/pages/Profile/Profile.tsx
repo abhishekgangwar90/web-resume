@@ -18,30 +18,28 @@ interface Props {
   match: any;
 }
 
-const Profile: React.FunctionComponent<Props> = ({
-  history,
-  location,
-  match,
-}: Props) => {
+const Profile: React.FunctionComponent<Props> = (props: Props) => {
   const classes = useStyles();
   const config = ProfileConfig;
   return (
     <div className={classes.container}>
-      <Suspense fallback={<div />}>
-        <ProfileHeader headerConfig={config.header} />
-      </Suspense>
-      <Suspense fallback={<div />}>
-        <ProfileAbout aboutConfig={config.about} />
-      </Suspense>
-      <Suspense fallback={<div />}>
-        <ProfileExperience experienceConfig={config.experience} />
-      </Suspense>
-      <Suspense fallback={<div />}>
-        <ProfileSkills skillsConfig={config.skills} />
-      </Suspense>
-      <Suspense fallback={<div />}>
-        <Footer footerConfig={config.footer} />
-      </Suspense>
+      <ProfileHeader headerConfig={config.header} />
+      <section className={classes.section} id="about">
+        <Suspense fallback={<div />}>
+          <ProfileAbout aboutConfig={config.about} />
+        </Suspense>
+      </section>
+      {/* <section id="experience">
+        <Suspense fallback={<div />}>
+          <ProfileExperience experienceConfig={config.experience} />
+        </Suspense>
+      </section>
+      <section id="skills">
+        <Suspense fallback={<div />}>
+          <ProfileSkills skillsConfig={config.skills} />
+        </Suspense>
+      </section> */}
+      <Footer footerConfig={config.footer} />
     </div>
   );
 };

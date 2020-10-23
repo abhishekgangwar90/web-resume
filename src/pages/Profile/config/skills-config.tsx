@@ -89,6 +89,10 @@ export const skillsConfig = {
           id: 2,
           subSkillTitle: 'Karma & Jasmine',
         },
+        {
+          id: 3,
+          subSkillTitle: 'Enzyme',
+        },
       ],
     },
     {

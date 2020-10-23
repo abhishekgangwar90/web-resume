@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+import { Button, IconButton } from '@material-ui/core';
 import React from 'react';
 import { useStyles } from './profile-about-styles';
 
@@ -19,16 +19,14 @@ const ProfileAboutAction: any = ({ actions = [] }: Props) => {
         Array.isArray(actions) &&
         actions.map((elm) => {
           return (
-            <Button
+            <IconButton
               key={elm.id}
               className={classes.button}
-              startIcon={elm.icon}
               color={elm.color}
-              variant={elm.variant}
               onClick={(e: any) => onButtonClick(e, elm.url)}
             >
-              {elm.name}
-            </Button>
+              {elm.icon}
+            </IconButton>
           );
         })}
     </div>

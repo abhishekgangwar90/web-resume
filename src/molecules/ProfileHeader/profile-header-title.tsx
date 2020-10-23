@@ -8,6 +8,8 @@ import {
   SwipeableDrawer,
   Typography,
 } from '@material-ui/core';
+import { Link } from 'react-scroll';
+
 import MenuIcon from '@material-ui/icons/Menu';
 import { useStyles } from './profile-header-styles';
 
@@ -25,11 +27,28 @@ const ProfileHeaderTitle: React.FunctionComponent<Props> = ({
 
   const renderDrawerMenuOptions = () => {
     return (
-      <List subheader={<ListSubheader>Abhishek Gangwar</ListSubheader>}>
+      <List
+        subheader={
+          <ListSubheader className={classes.subHeader}>
+            Abhishek Gangwar
+          </ListSubheader>
+        }
+      >
         {navOptions.map((elm) => {
           return (
             <ListItem key={elm.id}>
-              <ListItemText primary={elm.title} />
+              <Link
+                to={elm.targetId}
+                spy
+                smooth
+                offset={-70}
+                duration={800}
+                key={elm.id}
+                className={classes.link}
+                onClick={() => setOpen(false)}
+              >
+                <ListItemText primary={elm.title} />
+              </Link>
             </ListItem>
           );
         })}

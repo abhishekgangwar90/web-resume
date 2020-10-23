@@ -1,11 +1,6 @@
-import React, { Suspense } from 'react';
-import {
-  AppBar,
-  Button,
-  Container,
-  CssBaseline,
-  Toolbar,
-} from '@material-ui/core';
+import React from 'react';
+import { AppBar, Container, CssBaseline, Toolbar } from '@material-ui/core';
+import { Link } from 'react-scroll';
 import ElevationScroll from './profile-elevation-scroll';
 import { useStyles } from './profile-header-styles';
 
@@ -23,7 +18,6 @@ type navigationOption = {
   name: string;
   title: string;
   targetId: string;
-  // link: string;
 };
 
 const defaultProps: Props = {
@@ -38,22 +32,20 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
 }: Props) => {
   const classes = useStyles();
 
-  const handleNavClick = (targetId: string) => {
-    const element = document.getElementById(targetId);
-    return element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
   const renderToolBarButtons = () => {
     return headerConfig.navOptions.map((elm) => {
       return (
-        <Button
-          variant="text"
-          className={classes.button}
+        <Link
+          to={elm.targetId}
+          spy
+          smooth
+          offset={-70}
+          duration={800}
           key={elm.id}
-          onClick={() => handleNavClick(elm.targetId)}
+          className={classes.link}
         >
           {elm.title}
-        </Button>
+        </Link>
       );
     });
   };
@@ -65,12 +57,10 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
         <AppBar className={classes.appBar}>
           <Container className={classes.toolBarContainer}>
             <Toolbar className={classes.noPadding}>
-              <Suspense fallback={<div />}>
-                <ProfileHeaderTitle
-                  title={headerConfig.title}
-                  navOptions={headerConfig.navOptions}
-                />
-              </Suspense>
+              <ProfileHeaderTitle
+                title={headerConfig.title}
+                navOptions={headerConfig.navOptions}
+              />
               <div className={classes.toolbarActions}>
                 {renderToolBarButtons()}
               </div>
