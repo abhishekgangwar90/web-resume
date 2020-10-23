@@ -22,24 +22,28 @@ export const ProfileConfig = {
     navOptions: [
       {
         id: 1,
+        offset: -120,
         name: 'home',
         title: 'Home',
         targetId: 'about',
       },
       {
         id: 2,
+        offset: 0,
         name: 'experience',
         title: 'Experience',
         targetId: 'experience',
       },
       {
         id: 3,
+        offset: 0,
         name: 'skills',
         title: 'Skills',
         targetId: 'skills',
       },
       {
         id: 4,
+        offset: 0,
         name: 'contact',
         title: 'Contact',
         targetId: 'contact',

@@ -15,6 +15,7 @@ type Props = {
 
 type navigationOption = {
   id: number;
+  offset: number;
   name: string;
   title: string;
   targetId: string;
@@ -39,7 +40,7 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
           to={elm.targetId}
           spy
           smooth
-          offset={-70}
+          offset={elm.offset || 0}
           duration={800}
           key={elm.id}
           className={classes.link}

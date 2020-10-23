@@ -5,7 +5,6 @@ import { Card, Container, Paper, styled, withStyles } from '@material-ui/core';
 export const ExperienceContainer = styled(({ children, ...other }) => (
   <div {...other}>{children}</div>
 ))({
-  margin: '7% 0',
   padding: '8% 0 11% 0',
   backgroundColor: '#f4ece6',
 });
@@ -27,8 +26,8 @@ export const ExperienceCardContainer = withStyles({
     margin: '2%',
     backgroundColor: '#f8f8f8',
     borderRadius: '14px',
-    backgroundImage:
-      'linear-gradient(to bottom, rgba(0, 82, 118,0.8) 0%,#fff 30%)',
+    // backgroundImage:
+    //   'linear-gradient(to bottom, rgba(0, 82, 118,0.8) 0%,#fff 30%)',
   },
 })((props) => <Card elevation={4} {...props} />);
 

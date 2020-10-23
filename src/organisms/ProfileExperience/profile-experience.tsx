@@ -24,7 +24,7 @@ const ProfileExperience: React.FunctionComponent<Props> = ({
   experienceConfig,
 }: Props) => {
   return (
-    <ExperienceContainer id="experience">
+    <ExperienceContainer>
       <ExperienceContent>
         <Typography variant="h3">{experienceConfig.title}</Typography>
         <CarouselContainer>
