@@ -19,7 +19,9 @@ const ProfileSkills: React.FunctionComponent<Props> = ({
   return (
     <SkillsContainer>
       <Container>
-        <Typography variant="h3">{skillsConfig.title}</Typography>
+        <Typography variant="h3" style={{ textAlign: 'center' }}>
+          {skillsConfig.title}
+        </Typography>
       </Container>
       <ProfileSkillsList skillsData={skillsConfig.skillsData} />
     </SkillsContainer>

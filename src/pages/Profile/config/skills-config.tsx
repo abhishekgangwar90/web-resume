@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 export const skillsConfig = {
-  title: 'Skills',
+  title: 'Technical Skills',
   canSearch: false,
   skillsData: [
     {

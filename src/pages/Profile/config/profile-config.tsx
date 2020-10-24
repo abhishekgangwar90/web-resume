@@ -36,7 +36,7 @@ export const ProfileConfig = {
       },
       {
         id: 3,
-        offset: 0,
+        offset: -120,
         name: 'skills',
         title: 'Skills',
         targetId: 'skills',

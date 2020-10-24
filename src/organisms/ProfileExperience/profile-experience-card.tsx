@@ -14,6 +14,7 @@ type Props = {
   startDate: string;
   endDate: string | null;
   experienceDetails: Array<experienceDetail>;
+  toggleModalAction: any;
 };
 
 type experienceDetail = {
@@ -28,7 +29,16 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
   startDate,
   endDate,
   experienceDetails,
+  toggleModalAction,
 }: Props) => {
+  const handleClick = () => {
+    toggleModalAction({
+      open: true,
+      size: 'xl',
+      container: '<>Hello</>',
+    });
+  };
+
   const renderExperienceDetails = () => {
     return (
       <ul>
@@ -56,7 +66,12 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
       </ExperienceCardHeader>
       <ExperienceCardDetails>{renderExperienceDetails()}</ExperienceCardDetails>
       <ExperienceCardActions>
-        <Button variant="contained" color="primary">
+        <Button
+          area-label="more-details"
+          variant="contained"
+          onClick={handleClick}
+          color="primary"
+        >
           More Details
         </Button>
       </ExperienceCardActions>
