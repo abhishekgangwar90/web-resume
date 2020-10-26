@@ -5,6 +5,9 @@ import { styled } from '@material-ui/core';
 export const ModalContainer = styled(({ children, ...rest }) => {
   return <div {...rest}>{children}</div>;
 })({
-  padding: '2%',
-  width: '50rem',
+  padding: '5%',
+
+  '& li': {
+    margin: '1% 0',
+  },
 });

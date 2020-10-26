@@ -16,12 +16,24 @@ const ModalExperienceDetails: React.FunctionComponent<Props> = ({
 }: Props) => {
   return (
     <ModalContainer>
-      <Typography variant="h3">{title}</Typography>
-      <Typography variant="h5">@{organization}</Typography>
-      <h1>@{organization}</h1>
-      <h3>
-        {startDate} - {endDate || 'Present'}
-      </h3>
+      <div style={{ paddingLeft: '1rem' }}>
+        <Typography variant="h4">{title}</Typography>
+        <Typography variant="h5">@{organization}</Typography>
+        <Typography variant="body1">
+          {startDate} - {endDate || 'Present'}
+        </Typography>
+      </div>
+      <ul>
+        {extendedDetails &&
+          Array.isArray(extendedDetails) &&
+          extendedDetails.map((elm) => {
+            return (
+              <li key={elm.id}>
+                <Typography variant="body2">{elm.description}</Typography>
+              </li>
+            );
+          })}
+      </ul>
     </ModalContainer>
   );
 };

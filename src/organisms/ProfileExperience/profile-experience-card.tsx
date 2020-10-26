@@ -28,7 +28,7 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
   const handleClick = () => {
     toggleModalAction({
       open: true,
-      size: 'xl',
+      size: 'md',
       container: (
         <ModalExperienceDetails
           id={id}

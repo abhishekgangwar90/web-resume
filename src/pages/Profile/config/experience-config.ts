@@ -37,12 +37,12 @@ export const experienceConfig = {
         {
           id: 4,
           description:
-            'Technologies Used - React, Redux, Javascript, Material-UI, ES6, react-router, jest and enzyme.',
+            'Technologies Used - React, Redux, Javascript, Material-UI, ES6, react-router, Jest, Enzyme, HTML5 and CSS3.',
         },
         {
           id: 5,
           description:
-            'Primary Responsibilities - Development, Code Review, Requirement Gathering, Following Agile Life cycle',
+            'Primary Responsibilities - Development, Code Review, Requirement Gathering, Following Agile Practices.',
         },
       ],
     },
@@ -64,6 +64,31 @@ export const experienceConfig = {
             'Worked on modularizing self checkout application to improve performance and scalability.',
         },
       ],
+      extendedDetails: [
+        {
+          id: 1,
+          description: `Worked in close collaboration with other team members to develop secure mobile and desktop applications for a Retail based US client Kohls.`,
+        },
+        {
+          id: 2,
+          description: `Worked on developing payment module which can be used as a common payment gateway for store-platform applications.`,
+        },
+        {
+          id: 3,
+          description:
+            'Acted as a point of contact for Technical team, Product owners, Testing and platform team as and when required.',
+        },
+        {
+          id: 4,
+          description:
+            'Technologies Used - React, Redux, ES6, Material UI, Javascript, HTML5, CSS3, Webpack.',
+        },
+        {
+          id: 5,
+          description:
+            'Primary Responsibilities - Development, Code Review, Requirement Gathering, Enforcing Agile practices and Mentoring other Team members etc.',
+        },
+      ],
     },
     {
       id: 3,
@@ -83,6 +108,31 @@ export const experienceConfig = {
             'Improved scalability and performance of associate checkout application which was deployed into 750 stores after a successful pilot launch.',
         },
       ],
+      extendedDetails: [
+        {
+          id: 1,
+          description: `Worked in close collaboration with other team members to develop secure desktop applications for a Retail based US client Kohls.`,
+        },
+        {
+          id: 2,
+          description: `Worked on developing Cart and Payment module of Self-Checkout application which is self serving platform to enhance the product sales during festival times.`,
+        },
+        {
+          id: 3,
+          description:
+            'Worked on modularizing self checkout application to improve performance and scalability.',
+        },
+        {
+          id: 4,
+          description:
+            'Technologies Used - Angular 4, Ionic 3, Typescript, ES6, Electron, Cordova, Rxjs, Redux, HTML5, CSS3.',
+        },
+        {
+          id: 5,
+          description:
+            'Primary Responsibilities - Development, Code Review, Requirement Gathering etc.',
+        },
+      ],
     },
     {
       id: 4,
@@ -94,24 +144,38 @@ export const experienceConfig = {
         {
           id: 1,
           description:
-            'Developed Associate checkout application for IOS Platform using Angular and Ionic, which allows an associate to process products and payments.',
-        },
-        {
-          id: 2,
-          description:
-            'Worked on modularizing associate checkout application using NGRx, Redux, and Rxjs.',
-        },
-      ],
-      extendedDetails: [
-        {
-          id: 1,
-          description:
-            'Developed Associate checkout application for IOS Platform which was launched into 150 Kohls stores in pilot phase which was used to place approx. 10,000 orders during the festive time.',
+            'Developed Associate checkout application for IOS Platform which was launched into 150 Kohls stores and was used to place approx. 10,000 orders during the Black Friday sale.',
         },
         {
           id: 2,
           description:
             'Improved scalability and performance of associate checkout application which was deployed into 750 stores after a successful pilot launch.',
+        },
+      ],
+      extendedDetails: [
+        {
+          id: 1,
+          description: `Worked in close collaboration with other team members to develop secure mobile applications for a Retail based US client Kohls.`,
+        },
+        {
+          id: 2,
+          description:
+            'Developed Associate checkout application for IOS Platform which was launched into 150 Kohls stores and was used to place approx. 10,000 orders during the Black Friday sale.',
+        },
+        {
+          id: 3,
+          description:
+            'Worked on Improving scalability and performance of associate checkout application which was deployed into 750 stores after a successful pilot launch.',
+        },
+        {
+          id: 4,
+          description:
+            'Technologies Used - Angular 2, Ionic 3, Typescript, ES6, Cordova, Rxjs, Redux, HTML5, CSS3.',
+        },
+        {
+          id: 5,
+          description:
+            'Primary Responsibilities - Development and following Agile Practices etc.',
         },
       ],
     },
