@@ -48,26 +48,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    textTransform: 'none',
     marginRight: '1rem',
-    fontSize: '16px',
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '18px',
-      marginRight: '2rem',
-
-      '& .MuiButton-iconSizeMedium > *:first-child': {
-        fontSize: '24px',
-      },
-    },
-
-    [theme.breakpoints.up('md')]: {
-      fontSize: '22px',
-      marginRight: '2rem',
-
-      '& .MuiButton-iconSizeMedium > *:first-child': {
-        fontSize: '30px',
-      },
-    },
   },
 }));
 

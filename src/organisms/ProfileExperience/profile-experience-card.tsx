@@ -1,25 +1,17 @@
 import { Button, Typography } from '@material-ui/core';
 import React from 'react';
+import ModalExperienceDetails from '../../molecules/ModalExperienceDetails';
+import { ExperienceData } from '../../types/experience-types';
 import {
+  useStyles,
   ExperienceCardContainer,
   ExperienceCardActions,
   ExperienceCardDetails,
   ExperienceCardHeader,
 } from './profile-experience-styles';
 
-type Props = {
-  id: number;
-  title: string;
-  organization: string;
-  startDate: string;
-  endDate: string | null;
-  experienceDetails: Array<experienceDetail>;
+type Props = ExperienceData & {
   toggleModalAction: any;
-};
-
-type experienceDetail = {
-  id: number;
-  description: string;
 };
 
 const ExperienceCard: React.FunctionComponent<Props> = ({
@@ -29,13 +21,25 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
   startDate,
   endDate,
   experienceDetails,
+  extendedDetails,
   toggleModalAction,
 }: Props) => {
+  const classes = useStyles();
   const handleClick = () => {
     toggleModalAction({
       open: true,
       size: 'xl',
-      container: '<>Hello</>',
+      container: (
+        <ModalExperienceDetails
+          id={id}
+          title={title}
+          organization={organization}
+          startDate={startDate}
+          endDate={endDate}
+          experienceDetails={experienceDetails}
+          extendedDetails={extendedDetails}
+        />
+      ),
     });
   };
 
@@ -71,6 +75,7 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
           variant="contained"
           onClick={handleClick}
           color="primary"
+          className={classes.button}
         >
           More Details
         </Button>

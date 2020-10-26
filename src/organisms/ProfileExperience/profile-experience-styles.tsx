@@ -1,6 +1,12 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
-import { Card, Container, styled, withStyles } from '@material-ui/core';
+import {
+  Card,
+  Container,
+  makeStyles,
+  styled,
+  withStyles,
+} from '@material-ui/core';
 
 export const ExperienceContainer = styled(({ children, ...other }) => (
   <div {...other}>{children}</div>
@@ -53,4 +59,10 @@ export const ExperienceCardActions = styled(({ children, ...other }) => (
   justifyContent: 'flex-end',
   alignItems: 'center',
   height: '15%',
+});
+
+export const useStyles = makeStyles({
+  button: {
+    textTransform: 'none',
+  },
 });

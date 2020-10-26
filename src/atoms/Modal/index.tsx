@@ -1,15 +1,26 @@
 import React from 'react';
 import { Dialog, Slide } from '@material-ui/core';
 
-// const Transition = React.forwardRef(function Transition(props, ref) {
-//   return <Slide direction="up" ref={ref} {...props} />;
-// });
+type TransitionProps = {
+  children: React.ReactElement;
+};
+
+const Transition = React.forwardRef(function Transition(
+  props: TransitionProps,
+  ref
+) {
+  return (
+    <Slide direction="up" ref={ref}>
+      {props.children}
+    </Slide>
+  );
+});
 
 type Props = {
   open: boolean;
   container: React.ReactNode;
   size: false | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | undefined;
-  toggleModalAction: (payload: any) => {};
+  toggleModalAction: any;
 };
 
 const Modal: React.FunctionComponent<Props> = ({
@@ -18,7 +29,12 @@ const Modal: React.FunctionComponent<Props> = ({
   container,
   toggleModalAction,
 }: Props) => {
-  const handleClose = () => {};
+  const handleClose = () => {
+    toggleModalAction({
+      open: false,
+      container: null,
+    });
+  };
 
   return (
     <Dialog
@@ -27,8 +43,8 @@ const Modal: React.FunctionComponent<Props> = ({
       // TransitionComponent={Transition}
       keepMounted
       onClose={handleClose}
-      // aria-labelledby="dialog"
-      // aria-describedby="dialog-description"
+      aria-labelledby="dialog"
+      aria-describedby="dialog-description"
     >
       {container || ''}
     </Dialog>

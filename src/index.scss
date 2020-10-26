@@ -6,6 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-display: swap;
+
+  .slick-prev:before, .slick-next:before{
+    color: black;
+    font-size: 30px;
+  }
+ 
 }
 
 html {

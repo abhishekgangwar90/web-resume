@@ -3,7 +3,6 @@ import { useStyles } from './profile-styles';
 import { ProfileConfig } from './config/profile-config';
 import ContactInfo from '../../molecules/ContactInfo';
 import Modal from '../../atoms/Modal';
-import { toggleModalAction } from '../../state/actions';
 
 const ProfileHeader = React.lazy(() => import('../../molecules/ProfileHeader'));
 const ProfileAbout = React.lazy(() => import('../../molecules/ProfileAbout'));
@@ -24,7 +23,10 @@ interface Props {
   toggleModalAction: (payload: any) => {};
 }
 
-const Profile: React.FunctionComponent<Props> = ({ modal }: Props) => {
+const Profile: React.FunctionComponent<Props> = ({
+  modal,
+  toggleModalAction,
+}: Props) => {
   const classes = useStyles();
   const config = ProfileConfig;
 

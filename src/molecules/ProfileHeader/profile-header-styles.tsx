@@ -24,8 +24,8 @@ export const useStyles = makeStyles((theme) => ({
     flex: '1',
   },
   customIconButton: {
-    height: '45px',
-    width: '45px',
+    height: '3em',
+    width: '3em',
     borderRadius: '50%',
     fontSize: 'calc(4px + 2vmin)',
     backgroundColor: theme.palette.primary.main,

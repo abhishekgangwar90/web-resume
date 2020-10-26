@@ -13,11 +13,7 @@ export const SkillsContainer = styled(({ children, ...rest }) => {
 export const SkillListContainer = withStyles(() => ({}))(Container);
 
 export const SkillList = styled(({ children, ...rest }) => {
-  return (
-    <div id="skillList" {...rest}>
-      {children}
-    </div>
-  );
+  return <div {...rest}>{children}</div>;
 })({
   paddingTop: '4%',
   '& h5': {

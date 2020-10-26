@@ -10,15 +10,11 @@ import {
   ExperienceContent,
 } from './profile-experience-styles';
 import ExperienceCard from './profile-experience-card';
+import { ExperienceConfig } from '../../types/experience-types';
 
 type Props = {
-  experienceConfig: config;
+  experienceConfig: ExperienceConfig;
   toggleModalAction?: any;
-};
-
-type config = {
-  title: string;
-  experienceData: Array<any>;
 };
 
 const ProfileExperience: React.FunctionComponent<Props> = ({
