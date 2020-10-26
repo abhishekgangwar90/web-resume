@@ -34,6 +34,8 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     color: theme.palette.text.secondary,
     display: 'flex',
+    outline: 'none',
+    cursor: 'pointer',
 
     [theme.breakpoints.down('sm')]: {
       display: 'none',
@@ -41,8 +43,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   iconButton: {
     display: 'none',
+
     [theme.breakpoints.down('sm')]: {
-      display: 'inline-flex',
+      display: 'flex',
       paddingLeft: '0',
     },
   },

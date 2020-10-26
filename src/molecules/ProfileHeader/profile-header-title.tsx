@@ -58,14 +58,32 @@ const ProfileHeaderTitle: React.FunctionComponent<Props> = ({
 
   return (
     <div className={classes.toolbarTitle}>
-      <div className={classes.customIconButton}>AG</div>
-      <IconButton
+      <Link
+        to="about"
+        spy
+        smooth
+        offset={-120}
+        duration={800}
+        className={classes.link}
+        onClick={() => setOpen(false)}
+      >
+        <div
+          role="button"
+          tabIndex={0}
+          onKeyDown={() => {}}
+          className={classes.customIconButton}
+        >
+          AG
+        </div>
+      </Link>
+      {/* <IconButton
         color="primary"
         className={classes.iconButton}
+        area-label="menu"
         onClick={() => setOpen(true)}
       >
         <MenuIcon />
-      </IconButton>
+      </IconButton> */}
       <>
         <SwipeableDrawer
           anchor="left"
