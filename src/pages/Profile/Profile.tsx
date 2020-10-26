@@ -49,11 +49,11 @@ const Profile: React.FunctionComponent<Props> = ({
             <ProfileSkills skillsConfig={config.skills} />
           </Suspense>
         </section>
-        <section className={classes.section} id="contact">
+        {/* <section className={classes.section} id="contact">
           <Suspense fallback={<div />}>
             <ContactInfo />
           </Suspense>
-        </section>
+        </section> */}
         <Footer footerConfig={config.footer} />
       </div>
       <Modal {...modal} toggleModalAction={toggleModalAction} />
