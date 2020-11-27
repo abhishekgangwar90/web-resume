@@ -25,7 +25,7 @@ const ProfileAboutContent: React.FunctionComponent<Props> = ({
 }: Props) => {
   const classes = useStyles();
   return (
-    <div className={classes.aboutContainer}>
+    <article className={classes.aboutContainer}>
       <Typography variant="h3">{name}</Typography>
       <Typography variant="h5">{title}</Typography>
       <CenterAlignedTypography>
@@ -40,7 +40,7 @@ const ProfileAboutContent: React.FunctionComponent<Props> = ({
       <Suspense fallback={<div />}>
         <ProfileAboutAction actions={actions} />
       </Suspense>
-    </div>
+    </article>
   );
 };
 

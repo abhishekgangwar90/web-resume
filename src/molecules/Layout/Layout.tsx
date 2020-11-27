@@ -2,7 +2,11 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PageNotFound from '../../pages/PageNotFound';
-import { useStyles } from './layout-styles';
+import { ProfileConfig } from '../../config/profileConfig/profile-config';
+import './layout-styles.scss';
+
+const ProfileHeader = React.lazy(() => import('../ProfileHeader'));
+const Footer = React.lazy(() => import('../../atoms/Footer'));
 
 type RouteObj = {
   id: number;
@@ -16,10 +20,10 @@ type Props = {
 };
 
 const Layout: React.FunctionComponent<Props> = ({ appRoutes = [] }: Props) => {
-  const classes = useStyles();
   return (
-    <div className={classes.layout}>
-      <Suspense fallback="Loading...">
+    <Suspense fallback="Loading...">
+      <ProfileHeader headerConfig={ProfileConfig.header} />
+      <main className="layout">
         <Router basename="">
           <Switch>
             {appRoutes.map((route) => {
@@ -35,8 +39,9 @@ const Layout: React.FunctionComponent<Props> = ({ appRoutes = [] }: Props) => {
             <Route path="*" component={PageNotFound} />
           </Switch>
         </Router>
-      </Suspense>
-    </div>
+      </main>
+      <Footer footerConfig={ProfileConfig.footer} />
+    </Suspense>
   );
 };
 

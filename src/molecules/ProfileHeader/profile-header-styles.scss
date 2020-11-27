@@ -1,0 +1,60 @@
+@import './../../themes/appTheme.scss';
+
+.app-header {
+  display: flex;
+  flex: 0 1 10%;
+  justify-content: space-between;
+  padding: 2% $padding-default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+}
+
+.app-header .header-details {
+  display: flex;
+  flex: 1 1 30%;
+  align-items: center;
+}
+
+.app-header .icon-button {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: $font-xs;
+  font-weight: bold;
+  margin-right: 4%;
+}
+
+.app-header[elevation~='4'] {
+  background-color: $color-white;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+// navigation
+header nav {
+  display: flex;
+  align-items: center;
+  flex: 1 1 70%;
+  justify-content: flex-end;
+}
+
+header nav .nav-link {
+  font-family: Merriweather-Medium;
+  cursor: pointer;
+  margin: 0 1rem;
+  font-size: $font-xs;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.app-toolbar {
+  margin-top: 5%;
+}

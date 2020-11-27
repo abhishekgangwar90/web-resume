@@ -1,10 +1,8 @@
 import React from 'react';
-import { AppBar, Container, CssBaseline, Toolbar } from '@material-ui/core';
+import { CssBaseline, Toolbar } from '@material-ui/core';
 import { Link } from 'react-scroll';
 import ElevationScroll from './profile-elevation-scroll';
-import { useStyles } from './profile-header-styles';
-
-const ProfileHeaderTitle = React.lazy(() => import('./profile-header-title'));
+import './profile-header-styles.scss';
 
 type Props = {
   headerConfig: {
@@ -31,8 +29,6 @@ const defaultProps: Props = {
 const ProfileHeader: React.FunctionComponent<Props> = ({
   headerConfig = defaultProps.headerConfig,
 }: Props) => {
-  const classes = useStyles();
-
   const renderToolBarButtons = () => {
     return headerConfig.navOptions.map((elm) => {
       return (
@@ -43,7 +39,7 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
           offset={elm.offset || 0}
           duration={800}
           key={elm.id}
-          className={classes.link}
+          className="nav-link"
         >
           {elm.title}
         </Link>
@@ -55,21 +51,17 @@ const ProfileHeader: React.FunctionComponent<Props> = ({
     <>
       <CssBaseline />
       <ElevationScroll>
-        <AppBar className={classes.appBar}>
-          <Container className={classes.toolBarContainer}>
-            <Toolbar className={classes.noPadding}>
-              <ProfileHeaderTitle
-                title={headerConfig.title}
-                navOptions={headerConfig.navOptions}
-              />
-              <div className={classes.toolbarActions}>
-                {renderToolBarButtons()}
-              </div>
-            </Toolbar>
-          </Container>
-        </AppBar>
+        <header className="app-header">
+          <div className="header-details">
+            <button type="button" className="icon-button">
+              AG
+            </button>
+            <h1>{headerConfig.title}</h1>
+          </div>
+          <nav>{renderToolBarButtons()}</nav>
+        </header>
       </ElevationScroll>
-      <Toolbar className={classes.toolbar} />
+      <Toolbar className="app-toolbar" />
     </>
   );
 };

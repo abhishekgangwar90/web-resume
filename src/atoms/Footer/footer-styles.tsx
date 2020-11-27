@@ -33,9 +33,11 @@ export const useStyles = makeStyles((theme) => ({
 }));
 
 export const FooterContainer = styled(({ children, ...other }) => (
-  <div {...other}>{children}</div>
+  <footer {...other}>{children}</footer>
 ))({
   color: '#fff',
+  width: '100%',
+  flex: '0 1 auto',
   // backgroundColor: 'rgb(37,36,34,0.8)',
   backgroundColor: '#005276',
 });

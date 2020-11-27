@@ -6,7 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
-import IconStackOverFlow from '../../../atoms/IconStackoverflow';
+import IconStackOverFlow from '../../atoms/IconStackoverflow';
 import { skillsConfig } from './skills-config';
 import { experienceConfig } from './experience-config';
 

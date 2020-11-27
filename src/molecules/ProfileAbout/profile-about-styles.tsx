@@ -7,6 +7,8 @@ export const useStyles = makeStyles((theme) => ({
   container: {
     alignItems: 'center',
     display: 'flex',
+    height: '100%',
+    padding: '0 10%',
 
     [theme.breakpoints.down('md')]: {
       padding: '0 45px',
