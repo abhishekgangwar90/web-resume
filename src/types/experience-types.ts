@@ -10,5 +10,7 @@ export type ExperienceData = {
 
 export type ExperienceConfig = {
   title: string;
+  icon: any;
+  totalExp: number;
   experienceData: Array<ExperienceData>;
 };

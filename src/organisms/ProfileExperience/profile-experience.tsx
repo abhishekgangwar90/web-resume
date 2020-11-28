@@ -1,16 +1,12 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import Carousel from '../../atoms/Carousel';
-import {
-  CarouselContainer,
-  ExperienceContainer,
-  ExperienceContent,
-} from './profile-experience-styles';
+import { CarouselContainer } from './profile-experience-styles';
 import ExperienceCard from './profile-experience-card';
 import { ExperienceConfig } from '../../types/experience-types';
+import './profile-experience-styles.scss';
 
 type Props = {
   experienceConfig: ExperienceConfig;
@@ -22,26 +18,23 @@ const ProfileExperience: React.FunctionComponent<Props> = ({
   toggleModalAction,
 }: Props) => {
   return (
-    <ExperienceContainer>
-      <ExperienceContent>
-        <Typography variant="h3" style={{ textAlign: 'center' }}>
-          {experienceConfig.title}
-        </Typography>
-        <CarouselContainer>
-          <Carousel>
-            {experienceConfig.experienceData.map((elm) => {
-              return (
-                <ExperienceCard
-                  toggleModalAction={toggleModalAction}
-                  key={elm.id}
-                  {...elm}
-                />
-              );
-            })}
-          </Carousel>
-        </CarouselContainer>
-      </ExperienceContent>
-    </ExperienceContainer>
+    <section id="experience">
+      <h1>{experienceConfig.title}</h1>
+      <h3>Total Experience: {experienceConfig.totalExp} years</h3>
+      <CarouselContainer>
+        <Carousel>
+          {experienceConfig.experienceData.map((elm) => {
+            return (
+              <ExperienceCard
+                toggleModalAction={toggleModalAction}
+                key={elm.id}
+                {...elm}
+              />
+            );
+          })}
+        </Carousel>
+      </CarouselContainer>
+    </section>
   );
 };
 

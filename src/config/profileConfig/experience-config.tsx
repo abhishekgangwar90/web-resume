@@ -1,6 +1,12 @@
 /* eslint-disable import/prefer-default-export */
+import React from 'react';
+import WorkIcon from '@material-ui/icons/Work';
+import { getTotalExperience } from '../../utils/app.utils';
+
 export const experienceConfig = {
   title: 'Work Experience',
+  icon: <WorkIcon />,
+  totalExp: getTotalExperience(),
   experienceData: [
     {
       id: 1,

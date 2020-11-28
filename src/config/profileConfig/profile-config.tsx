@@ -10,11 +10,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 
 import { skillsConfig } from './skills-config';
 import { experienceConfig } from './experience-config';
-
-const careerStartDate = new Date('10/03/2016');
-const currentDate = new Date();
-const experience =
-  currentDate.getUTCFullYear() - careerStartDate.getUTCFullYear();
+import { getTotalExperience } from '../../utils/app.utils';
 
 export const ProfileConfig = {
   id: 'profile',
@@ -60,7 +56,7 @@ export const ProfileConfig = {
     name: 'Abhishek Gangwar',
     title: 'Front-end Developer',
     location: 'Gurugram, India',
-    aboutMe: `Results-oriented software engineering professional with ${experience} years of expertise in building secure applications. An excellent collaborator with a cheerful outlook who is always willing to learn new things and take on new challenges.`,
+    aboutMe: `Results-oriented software engineering professional with ${getTotalExperience()} years of expertise in building secure applications. An excellent collaborator with a cheerful outlook who is always willing to learn new things and take on new challenges.`,
     actions: [
       {
         id: 1,
