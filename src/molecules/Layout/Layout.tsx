@@ -23,7 +23,7 @@ const Layout: React.FunctionComponent<Props> = ({ appRoutes = [] }: Props) => {
   return (
     <Suspense fallback="Loading...">
       <ProfileHeader headerConfig={ProfileConfig.header} />
-      <main className="layout">
+      <main id="layout">
         <Router basename="">
           <Switch>
             {appRoutes.map((route) => {

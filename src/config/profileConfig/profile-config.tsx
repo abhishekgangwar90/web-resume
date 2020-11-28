@@ -20,7 +20,7 @@ export const ProfileConfig = {
     navOptions: [
       {
         id: 1,
-        offset: -120,
+        offset: -140,
         name: 'home',
         title: 'Home',
         icon: <HomeIcon />,
@@ -28,7 +28,7 @@ export const ProfileConfig = {
       },
       {
         id: 2,
-        offset: 0,
+        offset: -120,
         name: 'experience',
         title: 'Experience',
         icon: <WorkIcon />,

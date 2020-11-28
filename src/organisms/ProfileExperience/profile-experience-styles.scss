@@ -3,7 +3,7 @@
 #experience {
   padding: 5% $padding-default;
   background-color: $color-background-peach;
-  font-family: Me;
+  font-family: Merriweather-Regular;
 }
 
 #experience h1 {
@@ -27,4 +27,8 @@
 .experience-container h3 {
   font-family: Merriweather-Regular;
   font-size: $font-xs;
+}
+
+.experience-container ul li {
+  margin: 1%;
 }
