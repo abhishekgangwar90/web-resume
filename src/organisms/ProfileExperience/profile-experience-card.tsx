@@ -24,7 +24,6 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
   extendedDetails,
   toggleModalAction,
 }: Props) => {
-  const classes = useStyles();
   const handleClick = () => {
     toggleModalAction({
       open: true,
@@ -50,8 +49,8 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
           Array.isArray(experienceDetails) &&
           experienceDetails.map((elm) => {
             return (
-              <li key={elm.id}>
-                <Typography variant="body2">{elm.description}</Typography>
+              <li data-aos="fade-left" key={elm.id}>
+                {elm.description}
               </li>
             );
           })}
@@ -60,27 +59,15 @@ const ExperienceCard: React.FunctionComponent<Props> = ({
   };
 
   return (
-    <ExperienceCardContainer>
-      <ExperienceCardHeader>
-        <Typography variant="h6">{title}</Typography>
-        <Typography variant="subtitle2">{`@${organization}`} </Typography>
-        <Typography variant="body1">
+    <article className="experience-container">
+      <article data-aos="fade-right">
+        <h2>{`@${organization}`} </h2>
+        <h3>
           {startDate} - {endDate || 'Present'}
-        </Typography>
-      </ExperienceCardHeader>
+        </h3>
+      </article>
       <ExperienceCardDetails>{renderExperienceDetails()}</ExperienceCardDetails>
-      <ExperienceCardActions>
-        <Button
-          area-label="more-details"
-          variant="contained"
-          onClick={handleClick}
-          color="primary"
-          className={classes.button}
-        >
-          More Details
-        </Button>
-      </ExperienceCardActions>
-    </ExperienceCardContainer>
+    </article>
   );
 };
 

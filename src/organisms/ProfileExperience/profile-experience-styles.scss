@@ -3,8 +3,28 @@
 #experience {
   padding: 5% $padding-default;
   background-color: $color-background-peach;
+  font-family: Me;
 }
 
-#experience h3 {
+#experience h1 {
+  text-align: center;
+}
+
+#experience h2 {
+  text-align: center;
   font-family: Merriweather-Regular;
+}
+
+#experience-list .experience-container {
+  margin: 2% 0;
+}
+
+#experience-list .experience-container h2 {
+  text-align: left;
+  color: $color-primary;
+}
+
+.experience-container h3 {
+  font-family: Merriweather-Regular;
+  font-size: $font-xs;
 }

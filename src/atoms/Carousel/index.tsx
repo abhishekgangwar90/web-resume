@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import { IconButton } from '@material-ui/core';
 
 type Props = {
   children: React.ReactNode;
@@ -23,9 +22,9 @@ const Carousel: React.FunctionComponent<Props> = ({
 const Next = (props: any) => {
   const { className, style, onClick } = props;
   return (
-    <div className={className} style={style} onClick={onClick}>
+    <button type="button" className={className} style={style} onClick={onClick}>
       <NavigateNextIcon />
-    </div>
+    </button>
   );
 };
 
