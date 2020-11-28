@@ -1,14 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
-import IconStackOverFlow from '../../atoms/IconStackoverflow';
 import { skillsConfig } from './skills-config';
 import { experienceConfig } from './experience-config';
+import IconComponent from '../../atoms/IconComponent';
+import IconLinkedIn from '../../atoms/IconLinkedIn';
+import IconGithub from '../../atoms/IconGithub';
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const careerStartDate = new Date('10/03/2016');
 const currentDate = new Date();
@@ -61,7 +64,7 @@ export const ProfileConfig = {
         id: 1,
         tooltip: 'Stack Overflow',
         name: 'stackOverFlow',
-        icon: <IconStackOverFlow />,
+        icon: <IconComponent size="lg" icon={faStackOverflow} />,
         color: 'primary',
         url: 'https://stackoverflow.com/users/9269538/abhishek-gangwar',
       },
@@ -69,7 +72,7 @@ export const ProfileConfig = {
         id: 2,
         name: 'linkedIn',
         tooltip: 'LinkedIn',
-        icon: <LinkedInIcon style={{ fontSize: '3.5rem' }} />,
+        icon: <IconComponent size="lg" icon={faLinkedin} />,
         color: 'primary',
         url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
       },
@@ -77,7 +80,7 @@ export const ProfileConfig = {
         id: 3,
         name: 'github',
         tooltip: 'Github',
-        icon: <GitHubIcon style={{ fontSize: '3rem' }} />,
+        icon: <IconComponent size="lg" icon={faGithub} />,
         color: 'primary',
         url: 'https://github.com/abhishekgangwar60',
       },
@@ -85,7 +88,7 @@ export const ProfileConfig = {
         id: 4,
         name: 'mail',
         tooltip: 'Email',
-        icon: <MailOutlineIcon style={{ fontSize: '3.5rem' }} />,
+        icon: <IconComponent size="lg" icon={faEnvelope} />,
         color: 'primary',
         variant: 'contained',
         url: 'mailto:me.abhishekgangwar@gmail.com',
@@ -99,25 +102,25 @@ export const ProfileConfig = {
       {
         id: 1,
         name: 'linkedIn',
-        icon: <LinkedInIcon />,
+        icon: <IconLinkedIn />,
         url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
       },
       {
         id: 2,
         name: 'github',
-        icon: <GitHubIcon />,
+        icon: <IconGithub />,
         url: 'https://github.com/abhishekgangwar90',
       },
       {
         id: 3,
         name: 'instagram',
-        icon: <InstagramIcon />,
+        icon: <IconGithub />,
         url: 'https://www.instagram.com/iam_abhishek25/',
       },
       {
         id: 4,
         name: 'facebook',
-        icon: <FacebookIcon />,
+        icon: <IconGithub />,
         url: 'https://www.facebook.com/AbhishekGangwar2558',
       },
     ],

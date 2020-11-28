@@ -49,9 +49,9 @@ const useStyles = makeStyles((theme) => ({
 const ProfilePic: React.FunctionComponent<any> = () => {
   const classes = useStyles();
   return (
-    <div className={classes.imageContainer}>
+    <figure className={classes.imageContainer}>
       <img src={Profile} width="100%" height="100%" alt="profile" />
-    </div>
+    </figure>
   );
 };
 

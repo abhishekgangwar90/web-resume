@@ -1,5 +1,29 @@
 @import './themes/appTheme.scss';
 
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('./assets/fonts/Merriweather-Regular.ttf') format('OpenType');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather-Medium';
+  src: url('./assets/fonts/Merriweather-Bold.ttf') format('OpenType');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url('./assets/fonts/Merriweather-Light.ttf') format('OpenType');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url('./assets/fonts/Merriweather-Black.ttf') format('OpenType');
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,9 +52,9 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  font-family: 'Merriweather-Bold';
+  font-family: 'Merriweather-Regular';
   flex-direction: column;
-  font-size: calc(18px + 2vmin);
+  font-size: $font-xs;
 }
 
 h1,
@@ -40,39 +64,15 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: 'Merriweather-Bold';
+  font-family: Merriweather-Bold;
 }
 
 h1 {
-  font-size: $font-small;
+  font-size: $font-xl;
 }
 
 a {
   color: $color-black;
   text-decoration: none;
   font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather-Regular';
-  src: url('./assets/fonts/Merriweather-Regular.ttf') format('OpenType');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather-Medium';
-  src: url('./assets/fonts/Merriweather-Bold.ttf') format('OpenType');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather-Light';
-  src: url('./assets/fonts/Merriweather-Light.ttf') format('OpenType');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather-Bold';
-  src: url('./assets/fonts/Merriweather-Black.ttf') format('OpenType');
-  font-display: swap;
 }

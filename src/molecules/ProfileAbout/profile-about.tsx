@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
-import { useStyles } from './profile-about-styles';
+import './profile-about-styles.scss';
+// import { useStyles } from './profile-about-styles';
 
 const ProfilePic = React.lazy(() => import('../../atoms/ProfilePic'));
 const ProfileAboutContent = React.lazy(() => import('./profile-about-content'));
@@ -17,7 +18,7 @@ type Props = {
 const ProfileAbout: React.FunctionComponent<Props> & {
   defaultProps: Partial<Props>;
 } = ({ aboutConfig }: Props) => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const renderProfilePic = () => {
     return (
       <Suspense fallback={<div />}>
@@ -27,7 +28,7 @@ const ProfileAbout: React.FunctionComponent<Props> & {
   };
 
   return (
-    <section className={classes.container}>
+    <section id="about">
       <ProfileAboutContent {...aboutConfig} />
       {renderProfilePic()}
     </section>

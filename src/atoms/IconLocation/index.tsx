@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-const IconStackOverflow: React.FunctionComponent<any> = () => {
+const IconLocation: React.FunctionComponent<any> = () => {
   return (
     <FontAwesomeIcon
       size="lg"
@@ -13,4 +13,4 @@ const IconStackOverflow: React.FunctionComponent<any> = () => {
   );
 };
 
-export default IconStackOverflow;
+export default IconLocation;
