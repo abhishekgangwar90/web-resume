@@ -3,7 +3,7 @@
 #about {
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 $padding-default;
 }
 
 #about h2 {
@@ -11,17 +11,64 @@
   font-family: 'Merriweather-Medium';
 }
 
-#about h3 {
-  font-size: $font-xs;
-}
-
 #about .location {
   display: flex;
   align-items: center;
 }
 
+#about .location svg {
+  fill: $color-primary;
+}
+
+#about figure {
+  justify-content: flex-end;
+}
+
 .about-action {
   display: flex;
+}
+
+/*
+* for Phone screens
+*/
+@media only screen and (max-width: $screen-phone) {
+  #about {
+    flex-direction: column-reverse;
+    padding: 0 $padding-default-phone;
+  }
+
+  #about h1 {
+    font-size: $font-large;
+  }
+
+  #about article,
+  .location {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/*
+* for Tablet screens
+*/
+@media only screen and (max-width: $screen-tab) {
+  #about {
+    padding: 0 $padding-default-phone;
+  }
+
+  #about h1 {
+    font-size: $font-medium;
+  }
+
+  #about article,
+  .location {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #about figure {
+    margin: 1%;
+  }
 }
 
 // /* eslint-disable import/prefer-default-export */

@@ -1,17 +1,15 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
+import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import HomeIcon from '@material-ui/icons/Home';
+import WorkIcon from '@material-ui/icons/Work';
+import BuildIcon from '@material-ui/icons/Build';
+import PhoneIcon from '@material-ui/icons/Phone';
 
 import { skillsConfig } from './skills-config';
 import { experienceConfig } from './experience-config';
-import IconComponent from '../../atoms/IconComponent';
-import IconLinkedIn from '../../atoms/IconLinkedIn';
-import IconGithub from '../../atoms/IconGithub';
-import {
-  faGithub,
-  faLinkedin,
-  faStackOverflow,
-} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const careerStartDate = new Date('10/03/2016');
 const currentDate = new Date();
@@ -29,6 +27,7 @@ export const ProfileConfig = {
         offset: -120,
         name: 'home',
         title: 'Home',
+        icon: <HomeIcon />,
         targetId: 'about',
       },
       {
@@ -36,6 +35,7 @@ export const ProfileConfig = {
         offset: 0,
         name: 'experience',
         title: 'Experience',
+        icon: <WorkIcon />,
         targetId: 'experience',
       },
       {
@@ -43,6 +43,7 @@ export const ProfileConfig = {
         offset: -120,
         name: 'skills',
         title: 'Skills',
+        icon: <BuildIcon />,
         targetId: 'skills',
       },
       {
@@ -50,6 +51,7 @@ export const ProfileConfig = {
         offset: 0,
         name: 'contact',
         title: 'Contact',
+        icon: <PhoneIcon />,
         targetId: 'contact',
       },
     ],
@@ -64,7 +66,7 @@ export const ProfileConfig = {
         id: 1,
         tooltip: 'Stack Overflow',
         name: 'stackOverFlow',
-        icon: <IconComponent size="lg" icon={faStackOverflow} />,
+        icon: <GitHubIcon fontSize="large" />,
         color: 'primary',
         url: 'https://stackoverflow.com/users/9269538/abhishek-gangwar',
       },
@@ -72,7 +74,7 @@ export const ProfileConfig = {
         id: 2,
         name: 'linkedIn',
         tooltip: 'LinkedIn',
-        icon: <IconComponent size="lg" icon={faLinkedin} />,
+        icon: <LinkedInIcon fontSize="large" />,
         color: 'primary',
         url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
       },
@@ -80,7 +82,7 @@ export const ProfileConfig = {
         id: 3,
         name: 'github',
         tooltip: 'Github',
-        icon: <IconComponent size="lg" icon={faGithub} />,
+        icon: <GitHubIcon fontSize="large" />,
         color: 'primary',
         url: 'https://github.com/abhishekgangwar60',
       },
@@ -88,7 +90,7 @@ export const ProfileConfig = {
         id: 4,
         name: 'mail',
         tooltip: 'Email',
-        icon: <IconComponent size="lg" icon={faEnvelope} />,
+        icon: <EmailIcon fontSize="large" />,
         color: 'primary',
         variant: 'contained',
         url: 'mailto:me.abhishekgangwar@gmail.com',
@@ -102,25 +104,25 @@ export const ProfileConfig = {
       {
         id: 1,
         name: 'linkedIn',
-        icon: <IconLinkedIn />,
+        icon: <EmailIcon />,
         url: 'https://www.linkedin.com/in/abhishek-gangwar-47899b102/',
       },
       {
         id: 2,
         name: 'github',
-        icon: <IconGithub />,
+        icon: <EmailIcon />,
         url: 'https://github.com/abhishekgangwar90',
       },
       {
         id: 3,
         name: 'instagram',
-        icon: <IconGithub />,
+        icon: <EmailIcon />,
         url: 'https://www.instagram.com/iam_abhishek25/',
       },
       {
         id: 4,
         name: 'facebook',
-        icon: <IconGithub />,
+        icon: <EmailIcon />,
         url: 'https://www.facebook.com/AbhishekGangwar2558',
       },
     ],

@@ -65,10 +65,15 @@ header nav .nav-link {
   margin-top: 5%;
 }
 
+// css for Drawer components
+.header-details .drawer {
+  color: $color-primary;
+}
+
 /*
-* for Phone screens
+* for tab screens
 */
-@media only screen and (max-width: $screen-phone) {
+@media only screen and (max-width: $screen-tab) {
   .app-header {
     padding: 2% $padding-default-phone;
   }

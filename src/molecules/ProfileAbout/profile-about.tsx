@@ -18,7 +18,6 @@ type Props = {
 const ProfileAbout: React.FunctionComponent<Props> & {
   defaultProps: Partial<Props>;
 } = ({ aboutConfig }: Props) => {
-  // const classes = useStyles();
   const renderProfilePic = () => {
     return (
       <Suspense fallback={<div />}>

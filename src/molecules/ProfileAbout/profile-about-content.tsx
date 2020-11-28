@@ -1,5 +1,5 @@
 import React from 'react';
-import IconLocation from '../../atoms/IconLocation';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const ProfileAboutAction = React.lazy(() => import('./profile-about-actions'));
 
@@ -23,7 +23,7 @@ const ProfileAboutContent: React.FunctionComponent<Props> = ({
       <h1>{name}</h1>
       <h2>{title}</h2>
       <div className="location">
-        <IconLocation />
+        <LocationOnIcon />
         {location}
       </div>
       <p>{aboutMe}</p>
