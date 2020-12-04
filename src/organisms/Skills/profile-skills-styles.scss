@@ -1,0 +1,19 @@
+@import './../../themes/appTheme.scss';
+
+#skills {
+  padding: 5% $padding-default;
+  font-family: Merriweather-Regular;
+  display: flex;
+}
+
+#skills header {
+  flex: 1 1 40%;
+}
+
+#skills article {
+  flex: 1 1 60%;
+}
+
+#skills h1 {
+  text-align: center;
+}

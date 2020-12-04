@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography } from '@material-ui/core';
-import { SkillsContainer } from './profile-skills-styles';
 import { subSkillType } from './profile-skills-types';
+import './profile-skills-styles.scss';
 
 const ProfileSkillsList = React.lazy(() => import('./profile-skills-list'));
 
@@ -17,14 +17,15 @@ const ProfileSkills: React.FunctionComponent<Props> = ({
   skillsConfig,
 }: Props) => {
   return (
-    <SkillsContainer>
-      <Container>
-        <Typography variant="h3" style={{ textAlign: 'center' }}>
-          {skillsConfig.title}
-        </Typography>
-      </Container>
-      <ProfileSkillsList skillsData={skillsConfig.skillsData} />
-    </SkillsContainer>
+    <section id="skills">
+      <header>
+        <h1>{skillsConfig.title}</h1>
+        <p>hello hello</p>
+      </header>
+      <article>
+        <ProfileSkillsList skillsData={skillsConfig.skillsData} />
+      </article>
+    </section>
   );
 };
 

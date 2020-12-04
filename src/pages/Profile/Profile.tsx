@@ -30,15 +30,13 @@ const Profile: React.FunctionComponent<Props> = ({
   return (
     <>
       <ProfileAbout aboutConfig={config.about} />
-      <Suspense fallback={<article />}>
+      {/* <Suspense fallback={<section />}>
         <ProfileExperience experienceConfig={config.experience} />
+      </Suspense> */}
+      <Suspense fallback={<section />}>
+        <ProfileSkills skillsConfig={config.skills} />
       </Suspense>
-      {/* <section className="section" id="skills">
-        <Suspense fallback={<article />}>
-          <ProfileSkills skillsConfig={config.skills} />
-        </Suspense>
-      </section>
-      <section className="section" id="contact">
+      {/* <section className="section" id="contact">
         <Suspense fallback={<article />}>
           <ContactInfo />
         </Suspense>
