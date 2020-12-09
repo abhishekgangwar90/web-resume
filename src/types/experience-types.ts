@@ -1,3 +1,4 @@
+import { skillData } from './../organisms/Skills/profile-skills-types';
 export type ExperienceData = {
   id: number;
   organization: string;
@@ -19,3 +20,4 @@ export type ExperienceConfig = {
   totalExp: number;
   experienceData: Array<ExperienceData>;
 };
+

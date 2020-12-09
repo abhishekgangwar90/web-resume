@@ -4,16 +4,76 @@
   padding: 5% $padding-default;
   font-family: Merriweather-Regular;
   display: flex;
+  flex-direction: column;
 }
 
 #skills header {
-  flex: 1 1 40%;
+  flex: 1;
 }
 
-#skills article {
-  flex: 1 1 60%;
+#skills header hr{
+  width:20%;
 }
 
 #skills h1 {
   text-align: center;
+}
+
+
+#skills #skill-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skill-list::after{
+  content: '';
+  flex:auto
+}
+
+
+#card{
+    margin: 1rem;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    height: 6rem;
+    font-size: 13px;
+    text-align: justify;
+    border-radius: 8px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #e6e6e6;
+    cursor: pointer;
+}
+
+#card img{
+height: 45%;
+width: 45%;
+margin-bottom: 0.2rem;
+}
+
+#card figcaption{
+  font-family: Merriweather-medium;
+}
+
+
+
+/*
+* for Phone screens
+*/
+@media only screen and (max-width: $screen-phone) {
+  
+#skills header h1 {
+  font-size: $font-medium;
+}
+  
+  #card{
+    margin: 0.4rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 11px;
+  }
 }

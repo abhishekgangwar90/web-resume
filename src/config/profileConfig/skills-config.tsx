@@ -1,121 +1,147 @@
 /* eslint-disable import/prefer-default-export */
+
+import IconHTML from "../../assets/icons/html-5.svg";
+import IconCSS from "../../assets/icons/css3.svg";
+import IconJS from "../../assets/icons/javascript.svg";
+import IconReact from "../../assets/icons/react.svg";
+import IconReactNative from "../../assets/icons/react-native.svg";
+import IconAngular from "../../assets/icons/angularjs.svg";
+import IconRedux from "../../assets/icons/redux.svg";
+import IconIonic from "../../assets/icons/ionic.svg";
+import IconTypescript from "../../assets/icons/typescript.svg";
+import IconSass from "../../assets/icons/sass.svg";
+import IconBootstrap from "../../assets/icons/bootstrap.svg";
+import IconNode from "../../assets/icons/nodejs.svg";
+import IconMaterialUI from "../../assets/icons/material-ui.svg";
+import IconGithub from "../../assets/icons/github.svg";
+import IconJira from "../../assets/icons/jira.svg";
+import IconWebpack from "../../assets/icons/webpack.svg";
+import IconEs6 from '../../assets/icons/es6.svg';
+import IconElectron from '../../assets/icons/electronjs.svg';
+import IconNgrx from '../../assets/icons/ngrx.svg'
+import IconNpm from '../../assets/icons/npm.svg'
+import IconSplunk from '../../assets/icons/splunk.svg'
+import IconHighcharts from '../../assets/icons/highcharts.svg'
+
+
 export const skillsConfig = {
-  title: 'Technical Skills',
+  title: 'Tools & Technical Skills',
   canSearch: false,
   skillsData: [
-    {
-      id: 1,
-      skillHeader: 'Tools & Technologies',
-      subSkillsData: [
         {
           id: 1,
-          subSkillTitle: 'React',
+          skillTitle: 'React',
+          icon: IconReact
         },
         {
           id: 2,
-          subSkillTitle: 'Angular',
+          skillTitle: 'Angular',
+          icon: IconAngular
         },
         {
           id: 3,
-          subSkillTitle: 'JavaScript',
+          skillTitle: 'JavaScript',
+          icon:IconJS
         },
         {
           id: 4,
-          subSkillTitle: 'React Native',
+          skillTitle: 'React Native',
+          icon:IconReactNative
         },
         {
           id: 5,
-          subSkillTitle: 'Ionic Frameworks',
+          skillTitle: 'Ionic',
+          icon:IconIonic
         },
         {
           id: 6,
-          subSkillTitle: 'Type Scripts',
+          skillTitle: 'TypeScript',
+          icon:IconTypescript
         },
         {
           id: 7,
-          subSkillTitle: 'Ecma Script 6',
+          skillTitle: 'ES6',
+          icon: IconEs6
         },
         {
           id: 8,
-          subSkillTitle: 'Redux',
+          skillTitle: 'Redux',
+          icon: IconRedux
         },
         {
           id: 9,
-          subSkillTitle: 'NgRx',
+          skillTitle: 'NgRx',
+          icon: IconNgrx
+
         },
         {
           id: 10,
-          subSkillTitle: 'Material UI',
+          skillTitle: 'Material UI',
+          icon: IconMaterialUI
+
         },
         {
           id: 11,
-          subSkillTitle: 'Bootstrap',
+          skillTitle: 'Bootstrap',
+          icon: IconBootstrap
+
         },
         {
           id: 12,
-          subSkillTitle: 'High Charts',
+          skillTitle: 'Webpack',
+          icon: IconWebpack
+
         },
         {
           id: 13,
-          subSkillTitle: 'Electron Js',
+          skillTitle: 'ElectronJs',
+          icon: IconElectron
+
         },
         {
           id: 14,
-          subSkillTitle: 'Stencil Js',
+          skillTitle: 'NodeJs',
+          icon: IconNode
         },
         {
           id: 15,
-          subSkillTitle: 'Html',
+          skillTitle: 'Html',
+          icon:IconHTML
         },
         {
           id: 16,
-          subSkillTitle: 'Css3',
+          skillTitle: 'Css3',
+          icon:IconCSS
         },
         {
           id: 17,
-          subSkillTitle: 'Sass',
-        },
-      ],
-    },
-    {
-      id: 2,
-      skillHeader: 'Testing Libraries',
-      subSkillsData: [
-        {
-          id: 1,
-          subSkillTitle: 'Jest',
+          skillTitle: 'Sass',
+          icon:IconSass
         },
         {
-          id: 2,
-          subSkillTitle: 'Karma & Jasmine',
+          id: 18,
+          skillTitle: 'Highcharts',
+          icon: IconHighcharts
         },
         {
-          id: 3,
-          subSkillTitle: 'Enzyme',
-        },
-      ],
-    },
-    {
-      id: 3,
-      skillHeader: 'Industry Knowledge',
-      subSkillsData: [
-        {
-          id: 1,
-          subSkillTitle: 'Agile Methodologies',
+          id: 19,
+          skillTitle: 'Github',
+          icon: IconGithub
         },
         {
-          id: 2,
-          subSkillTitle: 'Software Development Life Cycle',
+          id: 20,
+          skillTitle: 'Jira',
+          icon: IconJira
         },
         {
-          id: 3,
-          subSkillTitle: 'Hybrid Application development',
+          id: 21,
+          skillTitle: 'npm',
+          icon: IconNpm
         },
         {
-          id: 4,
-          subSkillTitle: 'Mobile Application development',
+          id: 22,
+          skillTitle: 'splunk',
+          icon: IconSplunk
         },
-      ],
-    },
   ],
 };

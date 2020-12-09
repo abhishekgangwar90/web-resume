@@ -1,10 +1,6 @@
-export type subSkillType = {
-  id: number;
-  skillHeader: string;
-  subSkillsData: Array<subSkillData>;
-};
 
-export type subSkillData = {
+export type skillData = {
   id: number;
-  subSkillTitle: string;
+  skillTitle: string;
+  icon: any
 };
