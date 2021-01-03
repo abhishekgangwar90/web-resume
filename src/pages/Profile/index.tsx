@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Profile from './profile';
+import Profile from './Profile';
 import { toggleModalAction } from '../../state/actions';
 
 const mapStateToProps = ({ state }: any) => {
